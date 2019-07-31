@@ -1,9 +1,8 @@
-% Replication instructions for ``Estimating Crisis Signaling Games in International Relations: Problems and Solutions''
-% Casey Crisman-Cox and Michael Gibilisco
-% July 1, 2019
-
-
-
+---
+title:  'Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions" '
+author: Casey Crisman-Cox and Michael Gibilisco
+date: July 31, 2019
+...
 ## A note for replicators
 Conducting constrained maximum likelihood estimation (CMLE)  requires specialized (open source) software that we run using a Ubuntu Linux operating system.
 All our PL, NPL, and tML results are based solely on `R` and can be replicated without issue on any operating system 
