@@ -15,7 +15,6 @@ We provide detailed setup instructions below.
 Contents:
 
 - Background information
-    - `readme.txt`: plain text readme
     - `readme.md`: plain text readme 
     - `readme.pdf`: PDF version of readme
 - Installation files
@@ -80,28 +79,27 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 2. Restart your computer 
 3. Open the Windows store
 4. Search for "Ubuntu"
-5. Click "Get"
+5. Select "Ubuntu 18.04 LTS" and click "Get"
 6. Once installed open the Ubuntu app. This may take a few minutes to load the first time.
 7. You will be prompted to choose a user name and password.  You will need to use this password throughout.
 8. Once setup with the Ubuntu app navigate to the replication folder from within the Ubuntu command line using the `cd` command.  For example, if the replication folder is saved in the Windows Downloads folder you could get there by using the command
 ```bash
-cd /mnt/c/Users/<WINDOWS USER>/Downloads/Replication
+cd /mnt/<c>/Users/<WINDOWS USER>/Downloads/<REPLICATION FOLDER>
 ```
-Where `c` refers to your main Windows drive (almost always `c`) and `<WINDOWS USER>` refers to your Windows username, not the Ubuntu user name you selected in step 7. 
+Where `<c>` refers to your main Windows drive (almost always `c`), `<WINDOWS USER>` refers to your Windows username (**not** the Ubuntu user name you selected in step 7), and `<REPLICATION FOLDER>` is the folder containing all the replication files.
 9. Run the file ``CMLE_setup.sh`` using the command
 ```bash
 bash CMLE_setup.sh
 ```
-This step may take up to a few hours depending on network speed and you may be prompted for your Ubuntu password (chosen in step 7) or to simply press "Enter" at various points in the process. An internet connection is required for this step.
-10. Once this script has completed we are ready to reproduce all the results. 
-
+This step may take up to a few hours depending on network speed and you may be prompted for your Ubuntu password (chosen in step 7), to select "yes",  or to press "Enter" at various points in the process. An Internet connection is required for this step.
+10. Once this script has completed we are ready to reproduce all the results.  If Windows is configured for automatic updating, we recommend that you disconnect from the Internet during the Monte Carlo steps as they may take a few hours or days.
 
 ## Simulation results
 To produce Figures 2-4 run bash script `replicateMonteCarlos.sh`.  Do this by opening the Ubuntu app, navigating to the Replication folder (as in step 8 above) and running the command:
 ```bash
 bash replicateMonteCarlos.sh
 ```
-Running this command will produce four output files (`MonteCarloResults_MEQ.rdata`, `MonteCarloResults_Unique.rdata`, `CMLE_meq.rdata`, and `CMLE_unique.rdata`), two log files (`r_montecarlo.txt` and `python_montecarlo.txt`), and  three figures (`figure2.pdf`, `figure3.pdf`, and `figure4.pdf`).
+This command produces four output files (`MonteCarloResults_MEQ.rdata`, `MonteCarloResults_Unique.rdata`, `CMLE_meq.rdata`, and `CMLE_unique.rdata`), two log files (`r_montecarlo.txt` and `python_montecarlo.txt`), and  three figures (`figure2.pdf`, `figure3.pdf`, and `figure4.pdf`).
 These three PDF files correspond to Figures 2-4 in the manuscript, respectively.
 Individual figures can be reproduced separately by running the commands in `replicateMonteCarlos.sh` one at a time.
 
@@ -114,7 +112,7 @@ Do this by opening the Ubuntu app, navigating to the Replication folder (as in s
 ```bash
 bash replicationSanctions.sh
 ```
-This will produce three output files (`CMLE_estimation_output.rdata`, `estimation_output.Rdata`, and `SIGMA.rdata`), three log files (`python_estimation.txt`,`r_estimation.txt`, and `final_estimation.txt`), and  one figure (`figure6.pdf`).
+This command produces three output files (`CMLE_estimation_output.rdata`, `estimation_output.Rdata`, and `SIGMA.rdata`), three log files (`python_estimation.txt`, `r_estimation.txt`, and `final_estimation.txt`), and  one figure (`figure6.pdf`).
 The values reported in Table 3 can be found in `final_estimation.txt`, while Figure 6 is found in `figure6.pdf`.
 Individual aspects of the analysis can be reproduced separately by running the commands in `replicateSanctions.sh` one at a time.
 
