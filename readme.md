@@ -1,11 +1,11 @@
 ---
 title:  'Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions" '
 author: Casey Crisman-Cox and Michael Gibilisco
-date: July 31, 2019
+date: August 5, 2019
 ...
 ## A note for replicators
 Conducting constrained maximum likelihood estimation (CMLE)  requires specialized (open source) software that we run using a Ubuntu Linux operating system.
-All our PL, NPL, and tML results are based solely on `R` and can be replicated without issue on any operating system 
+All our PL, NPL, and tML results are based solely on `R` and can be replicated without issue on any operating system.
 Here, we provide instructions for reproducing our results using the Windows Subsystem for Linux (WSL) for Windows 10.
 All the code should also work on an ordinary Ubuntu system.
 We provide detailed setup instructions below.
@@ -21,38 +21,38 @@ Contents:
     - `CMLE_setup.sh`:  A bash script to be run once WSL is installed and setup.  This will install all the necessary outside software to replicate the results. (Internet connection is required)
     - `install_Rpackages_noadmin.r`: An R script that installs all the `R` packages used here.
 - Support functions
-    - `signalingFunctions_main.r`: Contains objective functions and helper functions for the PL, NPL, and tML methods.
+    - `signalingFunctions_main.r`: Contains objective functions and helper functions for the PL, NPL, and tML methods
 	- `gradientFunctions.r`: Contains gradient functions for the PL and NPL
-	- `CMLE_functions.R`: Contains objective and gradient functions for the CMLE.
-	- `CMLE_functions.py`:  Contains objective functions and helper functions for the CMLE.
+	- `CMLE_functions.R`: Contains objective and gradient functions for the CMLE
+	- `CMLE_functions.py`:  Contains objective functions and helper functions for the CMLE
 	- `CMLE_MonteCarlo_meq_support.py`: Contains a function to run one Monte Carlo iteration with multiple equilibria
 	- `CMLE_MonteCarlo_meq_support.r`: Helper code for the CMLE Monte Carlo with multiple equilibria
 	- `CMLE_MonteCarlo_unique_support.py`: Contains a function to run one Monte Carlo iteration with a unique equilibrium
 	- `CMLE_MonteCarlo_unique_support.r`: Helper code for the CMLE Monte Carlo with a unique equilibrium
     - `CMLE_estimation_support.R`: Helper code for fitting the CMLE to sanctions data
-	- `parmap.py`: Helper code for running the CMLE Monte Carlos in parallel.
+	- `parmap.py`: Helper code for running the CMLE Monte Carlos in parallel
 - Monte Carlos 
-    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5 and two log files (`r_montecarlo.txt` and `python_montecarlo.txt`).
+    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5 and two log files (`r_montecarlo.txt` and `python_montecarlo.txt`)
     - `eqGraph.r`: Produces the equilibrium correspondences in Figure 2 (`figure2.pdf`)
-    - `MonteCarloMEQ.r`: Runs the Monte Carlo simulations when data generating game has multiple equlibiria. Outputs `MonteCarloResults_MEQ.rdata`.
-    - `MonteCarloUnique.r`: Runs the Monte Carlo simulations when data generating game a unique equlibiria. Outputs `MonteCarloResults_Unique.rdata`.
-    - `CMLE_MonteCarlo_meq.py`: Runs the Monte Carlo simulations for the CMLE when data generating game has multiple equlibiria. Outputs `CMLE_meq.rdata`.
-    - `CMLE_MonteCarlo_unique.py`: Runs the Monte Carlo simulations for the CMLE when data generating game has a unique equlibiria. Outputs `CMLE_unique.rdata`.
+    - `MonteCarloMEQ.r`: Runs the Monte Carlo simulations when data generating game has multiple equilibria. Outputs `MonteCarloResults_MEQ.rdata`
+    - `MonteCarloUnique.r`: Runs the Monte Carlo simulations when data generating game has a unique equilibrium. Outputs `MonteCarloResults_Unique.rdata`
+    - `CMLE_MonteCarlo_meq.py`: Runs the Monte Carlo simulations for the CMLE when data generating game has multiple equilibria. Outputs `CMLE_meq.rdata`
+    - `CMLE_MonteCarlo_unique.py`: Runs the Monte Carlo simulations for the CMLE when data generating game has a unique equilibrium. Outputs `CMLE_unique.rdata`
 	- `AnalyzeSimulationMEQ.r`: Inputs `MonteCarloResults_MEQ.rdata` and `CMLE_meq.rdata` and outputs Figure 3 (`figure3.pdf`)
 	- `AnalyzeSimulationUnique.r`: Inputs `MonteCarloResults_unique.rdata` and `CMLE_unique.rdata` and outputs Figure 4 (`figure4.pdf`)
 - Estimation and analysis
-    - `replicateSanctions.sh`: Bash script to run `CMLE_estimation.py`, `estimation.r`, `standardErrors.R` and `comparativeStatics.R`. Outputs Figure 6  and log files `python_estimation.txt`, `r_estimation.txt`, and `final_estimation.txt`.
+    - `replicateSanctions.sh`: Bash script to run `CMLE_estimation.py`, `estimation.r`, `standardErrors.R` and `comparativeStatics.R`. Outputs Figure 6  and log files `python_estimation.txt`, `r_estimation.txt`, and `final_estimation.txt`
     - `SanctionsDataSet.rdata`: Economic sanctions data 
-	- `CMLE_estimation.py`: Fits the CMLE to the sanctions data. Outputs `CMLE_estimation_output.rdata`.
-    - `estimation.R`: Fits tML, PL, and NPL to sanctions data. Outputs `estimation_output.Rdata`.
-	- `standardErrors.R`: Estimates standard errors for the tML, PL, NPL, and CMLE and prints the results reported in Table 3.
-	- `ComparativeStatics.R`: Inputs `CMLE_estimation_output.rdata` and `estimation_output.Rdata` and produces Figure 6 (`figure6.pdf`).
+	- `CMLE_estimation.py`: Fits the CMLE to the sanctions data. Outputs `CMLE_estimation_output.rdata`
+    - `estimation.R`: Fits tML, PL, and NPL to sanctions data. Outputs `estimation_output.Rdata`
+	- `standardErrors.R`: Estimates standard errors for the tML, PL, NPL, and CMLE and prints the results reported in Table 3
+	- `ComparativeStatics.R`: Inputs `CMLE_estimation_output.rdata` and `estimation_output.Rdata` and produces Figure 6 (`figure6.pdf`)
 - Output files
   	- `figure2.pdf`: Figure 2 in the manuscript
-	- `MonteCarloResults_MEQ.rdata`: Raw Monte Carlo results for the PL, NPL, and tML when there are multiple equilibria in the data generating game.
-	- `MonteCarloResults_unique.rdata`:	Raw Monte Carlo results for the PL, NPL, and tML when there is a unique equilibrium in the data generating game.
-	- `CMLE_unique.rdata`: Raw Monte Carlo results for the CMLE when there are multiple equilibria in the data generating game.
-	- `CMLE_meq.rdata`:	Raw Monte Carlo results for the CMLE when there is a unique equilibrium in the data generating game.
+	- `MonteCarloResults_MEQ.rdata`: Raw Monte Carlo results for the PL, NPL, and tML when there are multiple equilibria in the data generating game
+	- `MonteCarloResults_unique.rdata`:	Raw Monte Carlo results for the PL, NPL, and tML when there is a unique equilibrium in the data generating game
+	- `CMLE_unique.rdata`: Raw Monte Carlo results for the CMLE when there are multiple equilibria in the data generating game
+	- `CMLE_meq.rdata`:	Raw Monte Carlo results for the CMLE when there is a unique equilibrium in the data generating game
 	- `figure3.pdf`: Figure 3 in the manuscript
 	- `figure4.pdf`: Figure 4 in the manuscript
 	- `CMLE_estimation_output.rdata`: CMLE point estimates and model information
@@ -63,7 +63,7 @@ Contents:
     - `python_montecarlo.txt`: Log file for `CMLE_MonteCarlo_meq.py` and `CMLE_MonteCarlo_unique.py`
 	- `python_estimation.txt`: Log file for `CMLE_estimation.py`
 	- `r_estimation.txt`: Log file for `estimation.r`
-	- `final_estimation.txt`: Log file for `standardErrors.R`. Contains all the information used to created Table 3 in the manuscript.
+	- `final_estimation.txt`: Log file for `standardErrors.R`. Contains all the information used to created Table 3 in the manuscript
 
 ## WSL Setup
 All applications of the CMLE to either simulation or actual data was done with Ubuntu 18.04.1 (Bionic Beaver).
@@ -80,9 +80,9 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 3. Open the Windows store
 4. Search for "Ubuntu"
 5. Select "Ubuntu 18.04 LTS" and click "Get"
-6. Once installed open the Ubuntu app. This may take a few minutes to load the first time.
+6. Once it is installed, open the Ubuntu app. This may take a few minutes to load the first time.
 7. You will be prompted to choose a user name and password.  You will need to use this password throughout.
-8. Once setup with the Ubuntu app navigate to the replication folder from within the Ubuntu command line using the `cd` command.  For example, if the replication folder is saved in the Windows Downloads folder you could get there by using the command
+8. Once you are setup with the Ubuntu app, navigate to the replication folder from within the Ubuntu command line using the `cd` command.  For example, if the replication folder is saved in the Windows Downloads folder you could get there by using the command
 ```bash
 cd /mnt/<c>/Users/<WINDOWS USER>/Downloads/<REPLICATION FOLDER>
 ```
