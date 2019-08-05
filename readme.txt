@@ -1,6 +1,8 @@
-# Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions"
-# Casey Crisman-Cox and Michael Gibilisco
-
+---
+title:  'Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions" '
+author: Casey Crisman-Cox and Michael Gibilisco
+date: August 5, 2019
+...
 ## A note for replicators
 Conducting constrained maximum likelihood estimation (CMLE)  requires specialized (open source) software that we run using a Ubuntu Linux operating system.
 All our PL, NPL, and tML results are based solely on `R` and can be replicated without issue on any operating system.
@@ -13,7 +15,8 @@ We provide detailed setup instructions below.
 Contents:
 
 - Background information
-    - `readme.md`: plain text readme 
+    - `readme.md`: plain text readme for git archive
+    - `readme.txt`: plain text readme for pdf
     - `readme.pdf`: PDF version of readme
 - Installation files
     - `CMLE_setup.sh`:  A bash script to be run once WSL is installed and setup.  This will install all the necessary outside software to replicate the results. (Internet connection is required)
