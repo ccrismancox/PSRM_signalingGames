@@ -84,7 +84,6 @@ for(i in 1:length(Results)){
   ipopt <- IPOPT[[i]]
   drop <- which(apply(ipopt[1:6,], 2, function(x){any(abs(x)>50)})) #Check for bizarre results
   ipopt[7,drop] <- -99
-  print(table(ipopt[7,]))
   ipopt <- ipopt[-7,ipopt[7,]==0] #Check for convergence
   cmleOutBias[i, ]  <- (rowMeans(ipopt[1:length(truth),]-truth))
   cmleOutVar[i, ]  <- rowVars(ipopt[1:length(truth),])
