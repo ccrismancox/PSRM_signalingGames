@@ -4,6 +4,8 @@ import numpy as np
 from adolc import condassign
 from adolc import erf
 from adolc import adouble 
+import warnings
+warnings.filterwarnings("ignore")
 
 def norm_cdf(x):
     return 0.5 + 0.5*(erf(x/np.sqrt(2.0)))
