@@ -41,7 +41,6 @@ registerDoParallel(workers)
 # Begin the simulation
 set.seed(2) #seed 1 hanged at one point 
 for (i in 1:nrow(Bparams)){
-  cat("Now on ", i, " of ", nrow(Bparams), ". M =", Bparams[i,1], ", T =", Bparams[i,2], "\n")
   Results[[i]] <- foreach(b=1:B,
                           .packages=c("pbivnorm","rootSolve", "Formula", "randomForest", "mc2d", "maxLik"),
                           .combine=cbind,

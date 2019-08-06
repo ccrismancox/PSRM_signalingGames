@@ -33,7 +33,7 @@ Contents:
     - `CMLE_estimation_support.R`: Helper code for fitting the CMLE to sanctions data
 	- `parmap.py`: Helper code for running the CMLE Monte Carlos in parallel
 - Monte Carlos 
-    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5 and two log files (`r_montecarlo.txt` and `python_montecarlo.txt`)
+    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5. Note that there is no log file for this step ; all text output is suppressed to avoid producing a 20+ GB log file.
     - `eqGraph.r`: Produces the equilibrium correspondences in Figure 2 (`figure2.pdf`)
     - `MonteCarloMEQ.r`: Runs the Monte Carlo simulations when data generating game has multiple equilibria. Outputs `MonteCarloResults_MEQ.rdata`
     - `MonteCarloUnique.r`: Runs the Monte Carlo simulations when data generating game has a unique equilibrium. Outputs `MonteCarloResults_Unique.rdata`
@@ -60,8 +60,6 @@ Contents:
 	- `estimation_output.Rdata`: PL, NPL, and tML point estimates and model information
    	- `SIGMA.rdata`: Variance-covariance matrix for the first-stage estimates
     - `figure6.pdf`: Figure 6 in the manuscript
-	- `r_montecarlo.txt`: Log file for `MonteCarloMEQ.r` and `MonteCarloUnique.r`
-    - `python_montecarlo.txt`: Log file for `CMLE_MonteCarlo_meq.py` and `CMLE_MonteCarlo_unique.py`
 	- `python_estimation.txt`: Log file for `CMLE_estimation.py`
 	- `r_estimation.txt`: Log file for `estimation.r`
 	- `final_estimation.txt`: Log file for `standardErrors.R`. Contains all the information used to created Table 3 in the manuscript

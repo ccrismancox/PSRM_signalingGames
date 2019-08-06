@@ -40,15 +40,14 @@ registerDoParallel(workers)
 # Begin the simulation
 set.seed(1)
 for (i in 1:nrow(Bparams)){
-  cat("Now on ", i, " of ", nrow(Bparams), ". M =", Bparams[i,1], ", T =", Bparams[i,2], "\n")
   Results[[i]] <- foreach(b=1:B,
                           .packages=c("pbivnorm","rootSolve", "Formula", "randomForest", "mc2d", "maxLik"),
                           .combine=cbind,
                           .multicombine=T,
                           .inorder=F
   ) %dorng% {
-    system(paste("mkdir -p iteration", b, sep=""))
-	nPerGame <- Bparams[i,2]
+    
+    nPerGame <- Bparams[i,2]
     M <- Bparams[i,1]
     X <- data.frame(X=runif(M))
     f1 <- # create regression matrices
@@ -230,7 +229,7 @@ for (i in 1:nrow(Bparams)){
       out.NPL$iter <- -99
     }
     
-    system(paste("rm -r iteration", b, sep=""))
+
     c(out.2step$par, out.2step$convergence, out.2step$time, out.2step$iter,
       out.NPL$par, out.NPL$convergence,  out.NPL$time, out.NPL$iter,
       out.nfxp$par, out.nfxp$convergence, out.nfxp$time, out.nfxp$iter
