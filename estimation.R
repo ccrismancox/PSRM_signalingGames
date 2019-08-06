@@ -9,13 +9,13 @@
 
 rm(list=ls())
 
-library(pbivnorm)
-library(Formula)
-library(foreign)
-library(randomForest)
-library(data.table)
-library(maxLik)
-library(rootSolve)
+suppressMessages(library(pbivnorm))
+suppressMessages(library(Formula))
+suppressMessages(library(foreign))
+suppressMessages(library(randomForest))
+suppressMessages(library(data.table))
+suppressMessages(library(maxLik))
+suppressMessages(library(rootSolve))
 
 source("signalingFunctions_main.r")
 source("gradientFunctions.r")

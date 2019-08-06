@@ -6,10 +6,10 @@
 ############################################
 ############################################
 
-library(ggplot2)
-library(data.table)
-library(matrixStats)
-library(scales)
+suppressMessages(library(ggplot2))
+suppressMessages(library(data.table))
+suppressMessages(library(matrixStats))
+suppressMessages(library(scales))
 
 rm(list=ls())
 

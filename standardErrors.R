@@ -8,16 +8,16 @@
 
 rm(list=ls())
 
-library(pbivnorm)
-library(Formula)
-library(foreign)
-library(randomForest)
-library(data.table)
-library(numDeriv)
-library(Matrix)	
-library(maxLik)
-library(rootSolve)
-library(e1071)
+suppressMessages(library(pbivnorm))
+suppressMessages(library(Formula))
+suppressMessages(library(foreign))
+suppressMessages(library(randomForest))
+suppressMessages(library(data.table))
+suppressMessages(library(numDeriv))
+suppressMessages(library(Matrix))	
+suppressMessages(library(maxLik))
+suppressMessages(library(rootSolve))
+suppressMessages(library(e1071))
 
 
 source("signalingFunctions_main.r")

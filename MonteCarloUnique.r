@@ -9,15 +9,15 @@
 
 rm(list=ls())
 
-library(doParallel)
-library(doRNG)
-library(maxLik)
-library(foreach)
-library(rootSolve)
-library(pbivnorm)
-library(Formula)
-library(mc2d)
-library(randomForest)
+suppressMessages(library(doParallel))
+suppressMessages(library(doRNG))
+suppressMessages(library(maxLik))
+suppressMessages(library(foreach))
+suppressMessages(library(rootSolve))
+suppressMessages(library(pbivnorm))
+suppressMessages(library(Formula))
+suppressMessages(library(mc2d))
+suppressMessages(library(randomForest))
 
 
 source("signalingFunctions_main.r")

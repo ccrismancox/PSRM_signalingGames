@@ -8,13 +8,13 @@
 
 rm(list=ls())
 
-library(pbivnorm)
-library(Formula)
-library(foreign)
-library(ggplot2)
-library(doRNG)
-library(rootSolve)
-library(doParallel)
+suppressMessages(library(pbivnorm))
+suppressMessages(library(Formula))
+suppressMessages(library(foreign))
+suppressMessages(library(ggplot2))
+suppressMessages(library(doRNG))
+suppressMessages(library(rootSolve))
+suppressMessages(library(doParallel))
 
 ############################################
 # Functions

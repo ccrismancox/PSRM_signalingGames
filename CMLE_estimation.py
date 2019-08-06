@@ -15,7 +15,7 @@ import warnings
 
 user = os.path.expanduser("~")
 
-r('source("CMLE_estimation_support.R")')
+tempOut = r('source("CMLE_estimation_support.R")')
 regrMat = np.array((r("do.call(cbind, regr)")))
 regr = OrderedDict([('SA',regrMat[:,:4]),('VA',regrMat[:,4:6]),('CB',regrMat[:,6:11]),('barWA',regrMat[:,11:15]),('barWB',regrMat[:,15:18]),('bara',regrMat[:,18:20]),('VB',np.ones((regrMat.shape[0],0)))])
 Y = np.array((r("Y")))
@@ -200,6 +200,6 @@ value=numpy2ri(np.array([val]))
 
 r.assign("output", output)
 r.assign("value", value)
-r("save(list=c('output',  'value'), file='CMLE_estimation_output.rdata')")
+tempOut = r("save(list=c('output',  'value'), file='CMLE_estimation_output.rdata')")
 
 warnings.warn("End of file. Press enter if the system hangs here.")

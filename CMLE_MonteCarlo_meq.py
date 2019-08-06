@@ -17,7 +17,7 @@ for i in xrange(20):
     hold = np.array(parmap(lambda b:MCdo(b,i), xrange(B)))
     hold=numpy2ri(hold)
     r.assign("hold", hold)
-    r("Results[[%i]] <- hold"%(i+1))
-    r("save.image('CMLE_meq.rdata')")
+    tempOut = r("Results[[%i]] <- hold"%(i+1))
+    tempOut = r("save.image('CMLE_meq.rdata')")
 
 warnings.warn("End of file. Press enter if the system hangs here.")

@@ -33,7 +33,7 @@ Contents:
     - `CMLE_estimation_support.R`: Helper code for fitting the CMLE to sanctions data
 	- `parmap.py`: Helper code for running the CMLE Monte Carlos in parallel
 - Monte Carlos 
-    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5. Note that there is no log file for this step ; all text output is suppressed to avoid producing a 20+ GB log file.
+    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5. Note that there is no log file for this step; all text output is suppressed to avoid producing a 20+ GB log file.
     - `eqGraph.r`: Produces the equilibrium correspondences in Figure 2 (`figure2.pdf`)
     - `MonteCarloMEQ.r`: Runs the Monte Carlo simulations when data generating game has multiple equilibria. Outputs `MonteCarloResults_MEQ.rdata`
     - `MonteCarloUnique.r`: Runs the Monte Carlo simulations when data generating game has a unique equilibrium. Outputs `MonteCarloResults_Unique.rdata`
