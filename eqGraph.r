@@ -5,8 +5,8 @@
 ########    Graph of Eq. Corresp    ########
 ############################################
 ############################################
-library(ggplot2)
-library(pbivnorm)
+suppressMessages(library(ggplot2))
+suppressMessages(library(pbivnorm))
 
 source("signalingFunctions_main.r")
 
