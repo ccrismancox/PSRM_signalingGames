@@ -174,6 +174,7 @@ def MCdo(b, i):
     nlp2.num_option('dual_inf_tol', 1e-3)
     nlp2.num_option('constr_viol_tol', 1e-3)
     nlp2.num_option('tol', 1e-6)
+    nlp2.int_option('print_level', 0)
         
     t1 = time()
     out = nlp2.solve(x0)

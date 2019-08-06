@@ -6,7 +6,7 @@ from rpy2.robjects import r
 from rpy2.robjects.numpy2ri import numpy2ri
 import warnings
 
-r("Results <- list()")
+tempOut = r("Results <- list()")
 B = 1000
 
 
