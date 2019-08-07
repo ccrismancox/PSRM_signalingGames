@@ -1,6 +1,3 @@
-#import os
-#os.chdir('/home/cox/Google Drive/Dynamic MPEC Example/1shotMPEC/Code/python')
-
 from parmap import *
 import numpy as np
 from CMLE_MonteCarlo_meq_support import *

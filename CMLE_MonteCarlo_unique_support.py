@@ -16,7 +16,7 @@ def MCdo(b, i):
     tempOut = robj.r("rm(list=ls())")
     tempOut = robj.r("i <- %i"%(i+1))
     tempOut = robj.r("b <- %i"%(i*(1000)+(b+1) )) #edited 5/20 to reflect more MC iterations
-    robjtempOut = .r("source('CMLE_MonteCarlo_unique_support.r')")
+    tempOut = robj.r("source('CMLE_MonteCarlo_unique_support.r')")
     regrMat = np.array((robj.r("do.call(cbind, regr)")))
     regr = OrderedDict([('SA',np.ones((regrMat.shape[0],0))),('VA',regrMat[:,0:1]),('CB',np.ones((regrMat.shape[0],0))),('barWA',regrMat[:,1:2]),('barWB',regrMat[:,2:4]),('bara',regrMat[:,4:5]),('VB',regrMat[:,5:6])])
     Y = np.array((robj.r("Y")))
