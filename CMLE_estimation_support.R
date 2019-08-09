@@ -2,8 +2,8 @@
 rm(list=ls())
 
 
-library(data.table)
-library(Formula)
+suppressMessages(library(data.table))
+suppressMessages(library(Formula))
 
 load("SanctionsDataSet.rdata")
 # Find and remove missing values

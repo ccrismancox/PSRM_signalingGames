@@ -12,6 +12,7 @@ from collections import OrderedDict
 import pickle as pk
 from scipy.stats import norm
 import warnings
+warnings.simplefilter("default")
 
 user = os.path.expanduser("~")
 
@@ -202,4 +203,4 @@ r.assign("output", output)
 r.assign("value", value)
 tempOut = r("save(list=c('output',  'value'), file='CMLE_estimation_output.rdata')")
 
-warnings.warn("End of file. Press enter if the system hangs here.")
+warnings.showwarning("End of file. Press enter if the system hangs here.", UserWarning,"","")
