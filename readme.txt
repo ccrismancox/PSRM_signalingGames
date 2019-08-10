@@ -1,7 +1,7 @@
 ---
 title:  'Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions" '
 author: Casey Crisman-Cox and Michael Gibilisco
-date: August 5, 2019
+date: August 10, 2019
 ...
 ## A note for replicators
 Conducting constrained maximum likelihood estimation (CMLE)  requires specialized (open source) software that we run using a Ubuntu Linux operating system.
@@ -33,7 +33,7 @@ Contents:
     - `CMLE_estimation_support.R`: Helper code for fitting the CMLE to sanctions data
 	- `parmap.py`: Helper code for running the CMLE Monte Carlos in parallel
 - Monte Carlos 
-    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5. Note that there is no log file for this step; all text output is suppressed to avoid producing a 20+ GB log file.
+    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5. Produces the log file `MonteCarloLog.txt`. Note that IPOPT output is suppressed here to prevent  producing a log file that is several gigabytes in size.
     - `eqGraph.r`: Produces the equilibrium correspondences in Figure 2 (`figure2.pdf`)
     - `MonteCarloMEQ.r`: Runs the Monte Carlo simulations when data generating game has multiple equilibria. Outputs `MonteCarloResults_MEQ.rdata`
     - `MonteCarloUnique.r`: Runs the Monte Carlo simulations when data generating game has a unique equilibrium. Outputs `MonteCarloResults_Unique.rdata`
@@ -42,7 +42,7 @@ Contents:
 	- `AnalyzeSimulationMEQ.r`: Inputs `MonteCarloResults_MEQ.rdata` and `CMLE_meq.rdata` and outputs Figure 3 (`figure3.pdf`)
 	- `AnalyzeSimulationUnique.r`: Inputs `MonteCarloResults_unique.rdata` and `CMLE_unique.rdata` and outputs Figure 4 (`figure4.pdf`)
 - Estimation and analysis
-    - `replicateSanctions.sh`: Bash script to run `CMLE_estimation.py`, `estimation.r`, `standardErrors.R` and `comparativeStatics.R`. Outputs Figure 6  and log files `python_estimation.txt`, `r_estimation.txt`, and `final_estimation.txt`
+    - `replicateSanctions.sh`: Bash script to run `CMLE_estimation.py`, `estimation.r`, `standardErrors.R` and `comparativeStatics.R`. Outputs Figure 6  and the  log file `estimationLog.txt`.
     - `SanctionsDataSet.rdata`: Economic sanctions data 
 	- `CMLE_estimation.py`: Fits the CMLE to the sanctions data. Outputs `CMLE_estimation_output.rdata`
     - `estimation.R`: Fits tML, PL, and NPL to sanctions data. Outputs `estimation_output.Rdata`
