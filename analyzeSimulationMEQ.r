@@ -139,4 +139,3 @@ pMSE <- ggplot(plotData, aes(x=Observations, y=log(RMSE)))+
 
 ggsave(pMSE,  file="figure3.pdf", height=6, width=10)
 
-warning("End of file. Press enter if the system hangs here.")

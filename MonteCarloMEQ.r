@@ -241,6 +241,3 @@ for (i in 1:nrow(Bparams)){
 stopCluster(workers)
 
 
-
-
-warning("End of file. Press enter if the system hangs here.")

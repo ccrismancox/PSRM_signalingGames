@@ -64,4 +64,3 @@ pfull <- ggplot(fulldata, aes(x=x,y=eq)) +
         panel.spacing = unit(2.5, "lines"))
 ggsave(filename="figure2.pdf", plot=pfull, width=15, height=6)
 
-warning("End of file. Press enter if the system hangs here.")

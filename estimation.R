@@ -155,4 +155,4 @@ tML.out <- list(model=out.ml, start=x1)
 save(list=c("PL.out","tML.out", "NPL.out"), file="estimation_output.Rdata")
 
 print(out.ml)
-warning("End of file. Press enter if the system hangs here.")
+

@@ -154,16 +154,4 @@ ggsave(name,
        plot=graph, height=6.5, width=12.944
 )
 
-warning("End of file. Press enter if the system hangs here.")                   
-
-
-
-
-
-
-
-
-
-
-
 

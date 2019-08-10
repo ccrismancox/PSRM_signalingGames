@@ -207,6 +207,3 @@ cat("CMLE:\n") #These are the values for the CMLE estimates in Table 3
 print(out.CMLE)
 cat(paste("CMLE log Likelihood:", round(LL.cmle,2),"\n"))
 
-warning("End of file. Press enter if the system hangs here.")
-
-
