@@ -170,10 +170,10 @@ NPL.hat <- out.NPL$estimate
 z <- NPL.hat/se.NPL
 p <- 2*pnorm(abs(z),lower.tail = F)<0.05
 names(NPL.hat) <- varnames
-out.NPL <- round(cbind(sign(NPL.hat), NPL.hat, se.NPL, z, p),2)
-colnames(out.NPL) <- c("Sign", "Est.", "S.E.", "z-stat", "p<0.05")
+out.npl <- round(cbind(sign(NPL.hat), NPL.hat, se.NPL, z, p),2)
+colnames(out.npl) <- c("Sign", "Est.", "S.E.", "z-stat", "p<0.05")
 cat("NPL:\n") # NPL column of Table 3
-print(out.NPL)
+print(out.npl)
 cat(paste("NPL log Likelihood:", round(out.NPL$max,2), "\n"))
 
 
