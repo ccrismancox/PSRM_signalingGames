@@ -59,10 +59,9 @@ Contents:
 	- `estimation_output.Rdata`: PL, NPL, and tML point estimates and model information
    	- `SIGMA.rdata`: Variance-covariance matrix for the first-stage estimates
     - `figure6.pdf`: Figure 6 in the manuscript
-	- `python_estimation.txt`: Log file for `CMLE_estimation.py`
-	- `r_estimation.txt`: Log file for `estimation.r`
-	- `final_estimation.txt`: Log file for `standardErrors.R`. Contains all the information used to created Table 3 in the manuscript
-
+	- `MonteCarloLog.txt`: Log file for the Mont Carlo experiments
+	- `estimationLog.txt`: Log file for the sanctions application.  Prints all the information contained in Table 3.
+	
 ## WSL Setup
 All applications of the CMLE to either simulation or actual data was done with Ubuntu 18.04.1 (Bionic Beaver).
 The automatic differentiation (AD) software is only tested for Ubuntu operating systems.
