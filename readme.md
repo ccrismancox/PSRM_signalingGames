@@ -84,11 +84,13 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 cd /mnt/<c>/Users/<WINDOWS USER>/Downloads/<REPLICATION FOLDER>
 ```
 Where `<c>` refers to your main Windows drive (almost always `c`), `<WINDOWS USER>` refers to your Windows username (**not** the Ubuntu user name you selected in step 7), and `<REPLICATION FOLDER>` is the folder containing all the replication files.
+
 9. Run the file ``CMLE_setup.sh`` using the command
 ```bash
 bash CMLE_setup.sh
 ```
 This step may take up to a few hours depending on network speed and you may be prompted for your Ubuntu password (chosen in step 7), to select "yes",  or to press "Enter" at various points in the process. An Internet connection is required for this step.
+
 10. Once this script has completed we are ready to reproduce all the results.  If Windows is configured for automatic updating, we recommend that you disconnect from the Internet during the Monte Carlo steps as they may take a few hours or days.
 
 ## Simulation results
