@@ -1,0 +1,300 @@
+[PyIPOPT] Problem created
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit http://projects.coin-or.org/Ipopt
+******************************************************************************
+
+This is Ipopt version 3.12.3, running with linear solver mumps.
+NOTE: Other linear solvers might be more efficient (see Ipopt documentation).
+
+[Logspam] built arglist for eval_h
+[Logspam] Python function eval_h returns non-NULL
+Number of nonzeros in equality constraint Jacobian...:     8778
+Number of nonzeros in inequality constraint Jacobian.:        0
+Number of nonzeros in Lagrangian Hessian.............:     8988
+
+Total number of variables............................:      438
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:        0
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:      418
+Total number of inequality constraints...............:        0
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  4.0137999e+03 4.37e-01 9.98e-01  -1.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  4.0362376e+03 3.43e-01 7.99e+02  -1.7 3.49e+00   0.0 1.00e+00 1.00e+00h  1
+   2  4.1156096e+03 5.09e-02 5.80e+03  -1.7 2.95e+00  -0.5 1.00e+00 1.00e+00h  1
+Warning: Cutting back alpha due to evaluation error
+   3  4.0444697e+03 6.81e-02 1.35e+03  -1.7 2.21e+00   1.8 1.00e+00 2.50e-01f  3
+   4  4.0348531e+03 2.71e-02 3.62e+03  -1.7 1.32e+00   1.3 1.00e+00 1.00e+00f  1
+   5  4.0330610e+03 6.99e-03 1.66e+03  -1.7 5.73e-01   0.8 1.00e+00 1.00e+00f  1
+   6  4.0154403e+03 9.70e-03 4.92e+02  -1.7 1.47e+00   0.3 1.00e+00 1.00e+00f  1
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+   7  4.0107889e+03 9.52e-03 1.64e+02  -1.7 5.60e+02    -  1.00e+00 7.81e-03f  8
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+   8  3.9851004e+03 1.65e-02 3.48e+03  -1.7 4.00e+01    -  1.00e+00 6.25e-02f  5
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+   9  3.9691761e+03 1.64e-02 6.83e+03  -1.7 1.75e+01    -  1.00e+00 6.25e-02f  5
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+Warning: Cutting back alpha due to evaluation error
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  3.9633341e+03 2.08e-02 1.03e+04  -1.7 2.39e+01    -  1.00e+00 6.25e-02f  5
+  11  3.9516222e+03 1.97e-03 9.93e+01  -1.7 1.66e-01   0.7 1.00e+00 1.00e+00f  1
+Warning: SOC step rejected due to evaluation error
+  12  3.9351146e+03 2.94e-02 7.85e+02  -1.7 2.66e+00    -  1.00e+00 5.00e-01f  2
+  13  4.0608715e+03 1.37e-02 8.91e+03  -1.7 1.88e+00    -  1.00e+00 1.00e+00H  1
+Warning: Cutting back alpha due to evaluation error
+  14  3.9594348e+03 1.40e-02 4.17e+03  -1.7 1.24e+00   1.2 1.00e+00 2.50e-01f  3
+  15  3.9387472e+03 2.02e-03 3.50e+02  -1.7 1.38e-01   0.7 1.00e+00 1.00e+00f  1
+  16  3.9308533e+03 7.85e-03 8.42e+02  -1.7 1.81e+00    -  1.00e+00 5.00e-01f  2
+  17  3.9287407e+03 5.06e-03 2.01e+02  -1.7 3.87e-01    -  1.00e+00 1.00e+00f  1
+  18  3.9281718e+03 1.93e-03 1.00e+02  -1.7 2.93e-01    -  1.00e+00 1.00e+00f  1
+  19  3.9280502e+03 1.22e-03 1.48e+01  -1.7 2.90e-01    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  3.9280012e+03 8.31e-04 2.03e+01  -1.7 2.85e-01    -  1.00e+00 1.00e+00h  1
+  21  3.9279695e+03 5.99e-04 1.86e+01  -1.7 2.62e-01    -  1.00e+00 1.00e+00h  1
+  22  3.9279482e+03 4.48e-04 1.64e+01  -1.7 2.37e-01    -  1.00e+00 1.00e+00h  1
+  23  3.9279340e+03 3.22e-04 1.40e+01  -1.7 2.09e-01    -  1.00e+00 1.00e+00h  1
+  24  3.9279247e+03 2.22e-04 1.17e+01  -1.7 1.79e-01    -  1.00e+00 1.00e+00h  1
+  25  3.9279187e+03 1.48e-04 9.62e+00  -1.7 1.50e-01    -  1.00e+00 1.00e+00h  1
+  26  3.9279150e+03 9.47e-05 7.73e+00  -1.7 1.22e-01    -  1.00e+00 1.00e+00h  1
+  27  3.9279128e+03 5.90e-05 6.12e+00  -1.7 9.81e-02    -  1.00e+00 1.00e+00h  1
+  28  3.9279114e+03 3.59e-05 4.78e+00  -1.7 7.74e-02    -  1.00e+00 1.00e+00h  1
+  29  3.9279106e+03 2.14e-05 3.70e+00  -1.7 6.03e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  3.9279101e+03 1.25e-05 2.84e+00  -1.7 4.65e-02    -  1.00e+00 1.00e+00h  1
+  31  3.9279099e+03 7.27e-06 2.16e+00  -1.7 3.55e-02    -  1.00e+00 1.00e+00h  1
+  32  3.9279097e+03 4.17e-06 1.64e+00  -1.7 2.70e-02    -  1.00e+00 1.00e+00h  1
+  33  3.9279096e+03 2.37e-06 1.24e+00  -1.7 2.04e-02    -  1.00e+00 1.00e+00h  1
+  34  3.9279096e+03 1.34e-06 9.30e-01  -1.7 1.54e-02    -  1.00e+00 1.00e+00h  1
+  35  3.9279096e+03 7.57e-07 6.98e-01  -1.7 1.16e-02    -  1.00e+00 1.00e+00h  1
+  36  3.9279095e+03 4.25e-07 5.24e-01  -1.7 8.69e-03    -  1.00e+00 1.00e+00h  1
+  37  3.9279095e+03 2.38e-07 3.92e-01  -1.7 6.51e-03    -  1.00e+00 1.00e+00h  1
+  38  3.9279095e+03 1.33e-07 2.93e-01  -1.7 4.87e-03    -  1.00e+00 1.00e+00h  1
+  39  3.9279095e+03 7.44e-08 2.19e-01  -1.7 3.64e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  40  3.9279095e+03 4.15e-08 1.64e-01  -1.7 2.72e-03    -  1.00e+00 1.00e+00h  1
+  41  3.9279095e+03 2.31e-08 1.22e-01  -2.5 2.03e-03    -  1.00e+00 1.00e+00h  1
+  42  3.9279095e+03 1.29e-08 9.11e-02  -2.5 1.52e-03    -  1.00e+00 1.00e+00h  1
+  43  3.9279095e+03 7.17e-09 6.80e-02  -2.5 1.13e-03    -  1.00e+00 1.00e+00h  1
+  44  3.9279095e+03 3.99e-09 5.07e-02  -2.5 8.45e-04    -  1.00e+00 1.00e+00h  1
+  45  3.9279095e+03 2.22e-09 3.78e-02  -2.5 6.30e-04    -  1.00e+00 1.00e+00h  1
+  46  3.9279095e+03 1.23e-09 2.82e-02  -2.5 4.70e-04    -  1.00e+00 1.00e+00h  1
+  47  3.9279095e+03 6.87e-10 2.11e-02  -3.8 3.51e-04    -  1.00e+00 1.00e+00h  1
+  48  3.9279095e+03 3.82e-10 1.57e-02  -3.8 2.61e-04    -  1.00e+00 1.00e+00h  1
+  49  3.9279095e+03 2.12e-10 1.17e-02  -3.8 1.95e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  50  3.9279095e+03 1.18e-10 8.73e-03  -3.8 1.45e-04    -  1.00e+00 1.00e+00h  1
+  51  3.9279095e+03 6.57e-11 6.51e-03  -3.8 1.08e-04    -  1.00e+00 1.00e+00h  1
+  52  3.9279095e+03 3.65e-11 4.86e-03  -3.8 8.08e-05    -  1.00e+00 1.00e+00h  1
+  53  3.9279095e+03 2.03e-11 3.62e-03  -3.8 6.03e-05    -  1.00e+00 1.00e+00h  1
+  54  3.9279095e+03 1.13e-11 2.70e-03  -3.8 4.50e-05    -  1.00e+00 1.00e+00h  1
+  55  3.9279095e+03 6.27e-12 2.01e-03  -3.8 3.35e-05    -  1.00e+00 1.00e+00h  1
+  56  3.9279095e+03 3.51e-12 1.50e-03  -3.8 2.50e-05    -  1.00e+00 1.00e+00h  1
+  57  3.9279095e+03 1.94e-12 1.12e-03  -5.7 1.86e-05    -  1.00e+00 1.00e+00h  1
+  58  3.9279095e+03 1.09e-12 8.35e-04  -5.7 1.39e-05    -  1.00e+00 1.00e+00h  1
+  59  3.9279095e+03 5.80e-13 6.22e-04  -5.7 1.04e-05    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  60  3.9279095e+03 3.78e-13 4.64e-04  -5.7 7.73e-06    -  1.00e+00 1.00e+00h  1
+  61  3.9279095e+03 1.82e-13 3.46e-04  -5.7 5.76e-06    -  1.00e+00 1.00e+00h  1
+  62  3.9279095e+03 1.20e-13 2.58e-04  -5.7 4.30e-06    -  1.00e+00 1.00e+00h  1
+  63  3.9279095e+03 7.26e-14 1.92e-04  -5.7 3.20e-06    -  1.00e+00 1.00e+00h  1
+  64  3.9279095e+03 6.08e-14 1.43e-04  -5.7 2.39e-06    -  1.00e+00 1.00e+00h  1
+  65  3.9279095e+03 5.21e-14 1.07e-04  -5.7 1.78e-06    -  1.00e+00 1.00e+00h  1
+  66  3.9279095e+03 4.55e-14 7.98e-05  -5.7 1.33e-06    -  1.00e+00 1.00e+00h  1
+  67  3.9279095e+03 4.24e-14 5.95e-05  -5.7 9.90e-07    -  1.00e+00 1.00e+00h  1
+  68  3.9279095e+03 5.48e-14 4.43e-05  -5.7 7.38e-07    -  1.00e+00 1.00e+00h  1
+  69  3.9279095e+03 4.87e-14 3.31e-05  -5.7 5.51e-07    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  70  3.9279095e+03 5.10e-14 2.47e-05  -5.7 4.11e-07    -  1.00e+00 1.00e+00h  1
+  71  3.9279095e+03 4.52e-14 1.84e-05  -5.7 3.06e-07    -  1.00e+00 1.00e+00H  1
+  72  3.9279095e+03 6.08e-14 1.37e-05  -7.0 2.28e-07    -  1.00e+00 1.00e+00h  1
+  73  3.9279095e+03 6.38e-14 1.02e-05  -7.0 1.70e-07    -  1.00e+00 1.00e+00h  1
+  74  3.9279095e+03 4.07e-14 9.57e-06  -7.0 1.27e-07    -  1.00e+00 2.50e-01h  3
+  75  3.9279095e+03 3.63e-14 7.14e-06  -7.0 1.19e-07    -  1.00e+00 1.00e+00H  1
+  76  3.9279095e+03 4.31e-14 5.32e-06  -7.0 8.86e-08    -  1.00e+00 1.00e+00H  1
+  77  3.9279095e+03 4.71e-14 3.97e-06  -7.0 6.61e-08    -  1.00e+00 1.00e+00H  1
+  78  3.9279095e+03 3.62e-14 2.96e-06  -7.0 4.93e-08    -  1.00e+00 1.00e+00H  1
+  79  3.9279095e+03 4.14e-14 2.21e-06  -7.0 3.67e-08    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  80  3.9279095e+03 4.00e-14 1.93e-06  -7.0 2.74e-08    -  1.00e+00 5.00e-01h  2
+  81  3.9279095e+03 4.16e-14 1.44e-06  -7.0 2.39e-08    -  1.00e+00 1.00e+00H  1
+  82  3.9279095e+03 4.32e-14 1.44e-06  -7.0 1.78e-08    -  1.00e+00 1.22e-04h 14
+  83  3.9279095e+03 3.59e-14 1.07e-06  -7.0 1.78e-08    -  1.00e+00 1.00e+00H  1
+  84  3.9279095e+03 4.45e-14 7.98e-07  -7.0 1.33e-08    -  1.00e+00 1.00e+00H  1
+
+Number of Iterations....: 84
+
+                                   (scaled)                 (unscaled)
+Objective...............:   3.9279095149471450e+03    3.9279095149471450e+03
+Dual infeasibility......:   7.9826259025139734e-07    7.9826259025139734e-07
+Constraint violation....:   4.4519943287468777e-14    4.4519943287468777e-14
+Complementarity.........:   0.0000000000000000e+00    0.0000000000000000e+00
+Overall NLP error.......:   7.9826259025139734e-07    7.9826259025139734e-07
+
+
+Number of objective function evaluations             = 131
+Number of objective gradient evaluations             = 85
+Number of equality constraint evaluations            = 145
+Number of inequality constraint evaluations          = 0
+Number of equality constraint Jacobian evaluations   = 85
+Number of inequality constraint Jacobian evaluations = 0
+Number of Lagrangian Hessian evaluations             = 84
+Total CPU secs in IPOPT (w/o function evaluations)   =      0.250
+Total CPU secs in NLP function evaluations           =    252.703
+
+EXIT: Optimal Solution Found.
+Estimates
+[-0.52  0.01  0.04 -0.16  1.31 -0.19 -4.53  2.83  0.19  0.1  -0.02 -2.46
+ -0.05 -0.    0.04 -4.42 -0.01  0.29 -2.71 -0.  ]
+Maximum Likelihood estimation
+Newton-Raphson maximisation, 8 iterations
+Return code 2: successive function values within tolerance limit
+Log-Likelihood: -3964.026 (20 free parameter(s))
+Estimate(s): -0.3233168 0.002778248 0.0115533 -0.1786532 -0.3272146 0.3559486 -1.115965 2.320567 0.08245908 0.1314322 -0.04757277 -2.433104 0.3921169 0.0128196 0.0182235 0.484332 -0.001551391 0.1058027 -2.628135 -0.003894097 
+NPL updating:  1.398051 Function Value -3942.254 
+NPL updating:  1.278351 Function Value -3934.08 
+NPL updating:  0.2791022 Function Value -3932.761 
+NPL updating:  0.0975668 Function Value -3932.758 
+NPL updating:  0.04635924 Function Value -3932.394 
+NPL updating:  0.03493932 Function Value -3932.465 
+NPL updating:  0.008658945 Function Value -3932.414 
+NPL updating:  0.008027011 Function Value -3932.45 
+NPL updating:  0.001525522 Function Value -3932.441 
+NPL updating:  0.00148337 Function Value -3932.448 
+NPL updating:  0.0002836698 Function Value -3932.446 
+NPL updating:  0.0002416116 Function Value -3932.447 
+NPL updating:  5.11e-05 Function Value -3932.447 
+NPL updating:  4.064354e-05 Function Value -3932.447 
+NPL updating:  9.330556e-06 Function Value -3932.447 
+NPL updating:  7.251338e-06 Function Value -3932.447 
+NPL updating:  1.681229e-06 Function Value -3932.447 
+NPL updating:  1.351437e-06 Function Value -3932.447 
+NPL updating:  3.048076e-07 Function Value -3932.447 
+NPL updating:  2.503746e-07 Function Value -3932.447 
+NPL updating:  1.377996e-08 Function Value -3932.447 
+Maximum Likelihood estimation
+Newton-Raphson maximisation, 1 iterations
+Return code 2: successive function values within tolerance limit
+Log-Likelihood: -3932.447 (20 free parameter(s))
+Estimate(s): -0.2180765 0.03406959 0.05468594 -0.1702383 1.602845 -0.04814032 -2.136771 2.335138 0.1171802 0.1215085 -0.02552886 -2.418381 0.01407681 0.03525819 0.02649725 -0.9083785 -0.002637816 0.1199321 -2.638156 0.02007719 
+Warning messages:
+1: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+2: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+3: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+4: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+5: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+6: In stode(y, times, func, parms = parms, ...) : steady-state not reached
+Maximum Likelihood estimation
+Nelder-Mead maximization, 63247 iterations
+Return code 0: successful convergence 
+Log-Likelihood: -4102.759 (20 free parameter(s))
+Estimate(s): 0.04692208 -0.0002789047 0.2702598 -0.05774614 -0.06313998 -0.04297051 0.8095965 -0.2072399 -0.07933261 -0.2485307 0.1035234 -0.146308 0.07119151 0.008823819 -0.008762731 -0.3777501 0.008831526 0.006013122 -0.5615862 -0.0007260654 
+There were 50 or more warnings (use warnings() to see the first 50)
+traditional ML:
+                            Sign  Est. S.E. z-stat p<0.05
+SA1: sqrt(senderecondep)       1  0.05 0.29   0.16      0
+SA2: senderdemocracy          -1  0.00 0.00  -0.06      0
+SA3: contig                    1  0.27 0.10   2.78      1
+SA4: ally                     -1 -0.06 0.08  -0.73      0
+VA1: (Intercept)              -1 -0.06 0.08  -0.76      0
+VA2: anticipatedsendercosts   -1 -0.04 0.03  -1.68      0
+CB1: (Intercept)               1  0.81 0.91   0.89      0
+CB2: sqrt(targetecondep)      -1 -0.21 0.16  -1.26      0
+CB3: anticipatedtargetcosts   -1 -0.08 0.03  -2.76      1
+CB4: contig                   -1 -0.25 0.02 -15.30      1
+CB5: ally                      1  0.10 0.09   1.16      0
+barWA1: (Intercept)           -1 -0.15 0.78  -0.19      0
+barWA2: sqrt(senderecondep)    1  0.07 0.75   0.09      0
+barWA3: senderdemocracy        1  0.01 0.01   0.94      0
+barWA4: lncaprat              -1 -0.01 0.01  -0.62      0
+barWB1: (Intercept)           -1 -0.38 1.13  -0.33      0
+barWB2: targetdemocracy        1  0.01 0.00   2.59      1
+barWB3: lncaprat               1  0.01 0.01   0.50      0
+bara1: (Intercept)            -1 -0.56 0.77  -0.73      0
+bara2: senderdemocracy        -1  0.00 0.01  -0.12      0
+tML log Likelihood: -4102.76 
+PL:
+                            Sign  Est. S.E. z-stat p<0.05
+SA1: sqrt(senderecondep)      -1 -0.32 0.67  -0.49      0
+SA2: senderdemocracy           1  0.00 0.07   0.04      0
+SA3: contig                    1  0.01 0.01   1.21      0
+SA4: ally                     -1 -0.18 0.03  -5.93      1
+VA1: (Intercept)              -1 -0.33 0.83  -0.39      0
+VA2: anticipatedsendercosts    1  0.36 0.24   1.47      0
+CB1: (Intercept)              -1 -1.12 0.31  -3.63      1
+CB2: sqrt(targetecondep)       1  2.32 0.68   3.41      1
+CB3: anticipatedtargetcosts    1  0.08 0.06   1.43      0
+CB4: contig                    1  0.13 0.04   3.39      1
+CB5: ally                     -1 -0.05 0.13  -0.38      0
+barWA1: (Intercept)           -1 -2.43 0.10 -24.84      1
+barWA2: sqrt(senderecondep)    1  0.39 0.90   0.44      0
+barWA3: senderdemocracy        1  0.01 0.08   0.17      0
+barWA4: lncaprat               1  0.02 0.01   1.29      0
+barWB1: (Intercept)            1  0.48 0.22   2.16      1
+barWB2: targetdemocracy       -1  0.00 0.01  -0.14      0
+barWB3: lncaprat               1  0.11 0.04   2.60      1
+bara1: (Intercept)            -1 -2.63 0.09 -29.10      1
+bara2: senderdemocracy        -1  0.00 0.07  -0.05      0
+PL log Likelihood: -3964.03 
+NPL:
+                            Sign  Est. S.E. z-stat p<0.05
+SA1: sqrt(senderecondep)      -1 -0.22 1.11  -0.20      0
+SA2: senderdemocracy           1  0.03 0.07   0.52      0
+SA3: contig                    1  0.05 0.04   1.24      0
+SA4: ally                     -1 -0.17 0.10  -1.69      0
+VA1: (Intercept)               1  1.60 1.65   0.97      0
+VA2: anticipatedsendercosts   -1 -0.05 0.27  -0.18      0
+CB1: (Intercept)              -1 -2.14 0.80  -2.66      1
+CB2: sqrt(targetecondep)       1  2.34 1.11   2.10      1
+CB3: anticipatedtargetcosts    1  0.12 0.06   1.88      0
+CB4: contig                    1  0.12 0.04   3.31      1
+CB5: ally                     -1 -0.03 0.12  -0.21      0
+barWA1: (Intercept)           -1 -2.42 0.13 -18.41      1
+barWA2: sqrt(senderecondep)    1  0.01 1.14   0.01      0
+barWA3: senderdemocracy        1  0.04 0.07   0.52      0
+barWA4: lncaprat               1  0.03 0.03   0.85      0
+barWB1: (Intercept)           -1 -0.91 1.11  -0.82      0
+barWB2: targetdemocracy       -1  0.00 0.01  -0.26      0
+barWB3: lncaprat               1  0.12 0.05   2.37      1
+bara1: (Intercept)            -1 -2.64 0.13 -20.11      1
+bara2: senderdemocracy         1  0.02 0.07   0.29      0
+NPL log Likelihood: -3932.45 
+CMLE:
+                            Sign  Est. S.E. z-stat p<0.05
+SA1: sqrt(senderecondep)      -1 -0.52 0.55  -0.94      0
+SA2: senderdemocracy           1  0.01 0.03   0.28      0
+SA3: contig                    1  0.04 0.01   2.68      1
+SA4: ally                     -1 -0.16 0.07  -2.22      1
+VA1: (Intercept)               1  1.31 0.12  10.75      1
+VA2: anticipatedsendercosts   -1 -0.19 0.17  -1.13      0
+CB1: (Intercept)              -1 -4.53 2.24  -2.02      1
+CB2: sqrt(targetecondep)       1  2.83 0.63   4.52      1
+CB3: anticipatedtargetcosts    1  0.19 0.05   3.84      1
+CB4: contig                    1  0.10 0.03   2.86      1
+CB5: ally                     -1 -0.02 0.11  -0.18      0
+barWA1: (Intercept)           -1 -2.46 0.08 -31.78      1
+barWA2: sqrt(senderecondep)   -1 -0.05 0.18  -0.28      0
+barWA3: senderdemocracy       -1  0.00 0.03  -0.01      0
+barWA4: lncaprat               1  0.04 0.01   4.50      1
+barWB1: (Intercept)           -1 -4.42 2.92  -1.51      0
+barWB2: targetdemocracy       -1 -0.01 0.01  -2.33      1
+barWB3: lncaprat               1  0.29 0.09   3.24      1
+bara1: (Intercept)            -1 -2.71 0.10 -27.71      1
+bara2: senderdemocracy        -1  0.00 0.03  -0.15      0
+CMLE log Likelihood: -3927.91 
