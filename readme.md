@@ -93,15 +93,15 @@ This step may take up to a few hours depending on network speed and you may be p
 
 10. Once this script has completed we are ready to reproduce all the results.  If Windows is configured for automatic updating, we recommend that you disconnect from the Internet during the Monte Carlo steps as they may take a few hours or days.
 
+
 ## Simulation results
 To produce Figures 2-4 run bash script `replicateMonteCarlos.sh`.  Do this by opening the Ubuntu app, navigating to the Replication folder (as in step 8 above) and running the command:
 ```bash
 bash replicateMonteCarlos.sh
 ```
-This command produces four output files (`MonteCarloResults_MEQ.rdata`, `MonteCarloResults_Unique.rdata`, `CMLE_meq.rdata`, and `CMLE_unique.rdata`), two log files (`r_montecarlo.txt` and `python_montecarlo.txt`), and  three figures (`figure2.pdf`, `figure3.pdf`, and `figure4.pdf`).
+This command produces four output files (`MonteCarloResults_MEQ.rdata`, `MonteCarloResults_Unique.rdata`, `CMLE_meq.rdata`, and `CMLE_unique.rdata`), a log file (`MonteCarloLog.txt`), and  three figures (`figure2.pdf`, `figure3.pdf`, and `figure4.pdf`).
 These three PDF files correspond to Figures 2-4 in the manuscript, respectively.
 Individual figures can be reproduced separately by running the commands in `replicateMonteCarlos.sh` one at a time.
-
 Note that this may take several days or longer depending on the computer power available.
 
 
@@ -111,7 +111,7 @@ Do this by opening the Ubuntu app, navigating to the Replication folder (as in s
 ```bash
 bash replicationSanctions.sh
 ```
-This command produces three output files (`CMLE_estimation_output.rdata`, `estimation_output.Rdata`, and `SIGMA.rdata`), three log files (`python_estimation.txt`, `r_estimation.txt`, and `final_estimation.txt`), and  one figure (`figure6.pdf`).
-The values reported in Table 3 can be found in `final_estimation.txt`, while Figure 6 is found in `figure6.pdf`.
+This command produces three output files (`CMLE_estimation_output.rdata`, `estimation_output.Rdata`, and `SIGMA.rdata`), a log file (`estimationLog.txt`), and  one figure (`figure6.pdf`).
+All the values reported in Table 3 are found in `estimationLog.txt`, and  Figure 6 is reproduced in `figure6.pdf`.
 Individual aspects of the analysis can be reproduced separately by running the commands in `replicateSanctions.sh` one at a time.
 
