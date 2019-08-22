@@ -1,4 +1,4 @@
-#  'Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions" '
+# Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions"
 # Casey Crisman-Cox and Michael Gibilisco
 # August 10, 2019
 
