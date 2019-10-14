@@ -9,58 +9,6 @@ Here, we provide instructions for reproducing our results using the Windows Subs
 All the code should also work on an ordinary Ubuntu system.
 We provide detailed setup instructions below.
 
-
-## Replication package contents
-Contents:
-
-- Background information
-    - `readme.md`: plain text readme for git archive
-    - `readme.txt`: plain text readme for pdf
-    - `readme.pdf`: PDF version of readme
-- Installation files
-    - `CMLE_setup.sh`:  A bash script to be run once WSL is installed and setup.  This will install all the necessary outside software to replicate the results. (Internet connection is required)
-    - `install_Rpackages_noadmin.r`: An R script that installs all the `R` packages used here.
-- Support functions
-    - `signalingFunctions_main.r`: Contains objective functions and helper functions for the PL, NPL, and tML methods
-	- `gradientFunctions.r`: Contains gradient functions for the PL and NPL
-	- `CMLE_functions.R`: Contains objective and gradient functions for the CMLE
-	- `CMLE_functions.py`:  Contains objective functions and helper functions for the CMLE
-	- `CMLE_MonteCarlo_meq_support.py`: Contains a function to run one Monte Carlo iteration with multiple equilibria
-	- `CMLE_MonteCarlo_meq_support.r`: Helper code for the CMLE Monte Carlo with multiple equilibria
-	- `CMLE_MonteCarlo_unique_support.py`: Contains a function to run one Monte Carlo iteration with a unique equilibrium
-	- `CMLE_MonteCarlo_unique_support.r`: Helper code for the CMLE Monte Carlo with a unique equilibrium
-    - `CMLE_estimation_support.R`: Helper code for fitting the CMLE to sanctions data
-	- `parmap.py`: Helper code for running the CMLE Monte Carlos in parallel
-- Monte Carlos 
-    - `replicateMonteCarlos.sh`: Runs `eqGraph.r`, `MonteCarloMEQ.r`, `MonteCarloUnique.r`, `CMLE_MonteCarlo_meq.py`, `CMLE_MonteCarlo_unique.py`, `AnalyzeSimulationMEQ.r`, and `AnalyzeSimulationUnique.r` and outputs Figures 2, 4, and 5. Produces the log file `MonteCarloLog.txt`. Note that IPOPT output is suppressed here to prevent  producing a log file that is several gigabytes in size.
-    - `eqGraph.r`: Produces the equilibrium correspondences in Figure 2 (`figure2.pdf`)
-    - `MonteCarloMEQ.r`: Runs the Monte Carlo simulations when data generating game has multiple equilibria. Outputs `MonteCarloResults_MEQ.rdata`
-    - `MonteCarloUnique.r`: Runs the Monte Carlo simulations when data generating game has a unique equilibrium. Outputs `MonteCarloResults_Unique.rdata`
-    - `CMLE_MonteCarlo_meq.py`: Runs the Monte Carlo simulations for the CMLE when data generating game has multiple equilibria. Outputs `CMLE_meq.rdata`
-    - `CMLE_MonteCarlo_unique.py`: Runs the Monte Carlo simulations for the CMLE when data generating game has a unique equilibrium. Outputs `CMLE_unique.rdata`
-	- `AnalyzeSimulationMEQ.r`: Inputs `MonteCarloResults_MEQ.rdata` and `CMLE_meq.rdata` and outputs Figure 3 (`figure3.pdf`)
-	- `AnalyzeSimulationUnique.r`: Inputs `MonteCarloResults_unique.rdata` and `CMLE_unique.rdata` and outputs Figure 4 (`figure4.pdf`)
-- Estimation and analysis
-    - `replicateSanctions.sh`: Bash script to run `CMLE_estimation.py`, `estimation.r`, `standardErrors.R` and `comparativeStatics.R`. Outputs Figure 6  and the  log file `estimationLog.txt`.
-    - `SanctionsDataSet.rdata`: Economic sanctions data 
-	- `CMLE_estimation.py`: Fits the CMLE to the sanctions data. Outputs `CMLE_estimation_output.rdata`
-    - `estimation.R`: Fits tML, PL, and NPL to sanctions data. Outputs `estimation_output.Rdata`
-	- `standardErrors.R`: Estimates standard errors for the tML, PL, NPL, and CMLE and prints the results reported in Table 3
-	- `ComparativeStatics.R`: Inputs `CMLE_estimation_output.rdata` and `estimation_output.Rdata` and produces Figure 6 (`figure6.pdf`)
-- Output files
-  	- `figure2.pdf`: Figure 2 in the manuscript
-	- `MonteCarloResults_MEQ.rdata`: Raw Monte Carlo results for the PL, NPL, and tML when there are multiple equilibria in the data generating game
-	- `MonteCarloResults_unique.rdata`:	Raw Monte Carlo results for the PL, NPL, and tML when there is a unique equilibrium in the data generating game
-	- `CMLE_unique.rdata`: Raw Monte Carlo results for the CMLE when there are multiple equilibria in the data generating game
-	- `CMLE_meq.rdata`:	Raw Monte Carlo results for the CMLE when there is a unique equilibrium in the data generating game
-	- `figure3.pdf`: Figure 3 in the manuscript
-	- `figure4.pdf`: Figure 4 in the manuscript
-	- `CMLE_estimation_output.rdata`: CMLE point estimates and model information
-	- `estimation_output.Rdata`: PL, NPL, and tML point estimates and model information
-   	- `SIGMA.rdata`: Variance-covariance matrix for the first-stage estimates
-    - `figure6.pdf`: Figure 6 in the manuscript
-	- `MonteCarloLog.txt`: Log file for the Mont Carlo experiments
-	- `estimationLog.txt`: Log file for the sanctions application.  Prints all the information contained in Table 3.
 	
 ## WSL Setup
 All applications of the CMLE to either simulation or actual data was done with Ubuntu 18.04.1 (Bionic Beaver).
@@ -115,3 +63,16 @@ This command produces three output files (`CMLE_estimation_output.rdata`, `estim
 All the values reported in Table 3 are found in `estimationLog.txt`, and  Figure 6 is reproduced in `figure6.pdf`.
 Individual aspects of the analysis can be reproduced separately by running the commands in `replicateSanctions.sh` one at a time.
 
+
+
+## Appendices
+To replicate the appendices run the commands:
+```bash
+bash replicationAppendixC.sh
+bash replicationAppendixE.sh
+bash replicationAppendixF.sh
+bash replicationAppendixG.sh
+bash replicationAppendixH.sh
+bash replicationAppendixI.sh
+```
+These will produce Figures 8-24 and Tables 5-10. Table 5 is found in `appendixC.txt`, while Tables 6-10 are  in `appendixI.txt`.

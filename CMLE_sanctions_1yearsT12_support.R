@@ -24,7 +24,7 @@ for(i in 1:7){
 }
 names(regr) <- c("SA", "VA", "CB", "barWA", "barWB", "bara", "VB")  
 
-load("appendixI3_output_5years.Rdata")
+load("appendixI3_output_1yearsT12.Rdata")
 PRhat <- PL.out$Phat$PRhat
 out <- PL.out$model
 set.seed(15) 
