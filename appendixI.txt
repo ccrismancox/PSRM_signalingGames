@@ -1,0 +1,64 @@
+NPL updating:  1.356646 Function Value -3199.632 
+NPL updating:  2.183408 Function Value -3182.059 
+NPL updating:  0.3314074 Function Value -3180.06 
+NPL updating:  0.1886089 Function Value -3180.587 
+NPL updating:  0.08663703 Function Value -3179.988 
+NPL updating:  0.1000053 Function Value -3180.249 
+NPL updating:  0.01842721 Function Value -3180.115 
+NPL updating:  0.02203079 Function Value -3180.231 
+NPL updating:  0.003107281 Function Value -3180.215 
+NPL updating:  0.003614203 Function Value -3180.227 
+NPL updating:  0.0004369908 Function Value -3180.226 
+NPL updating:  0.0004223439 Function Value -3180.228 
+NPL updating:  7.036793e-05 Function Value -3180.227 
+NPL updating:  5.498101e-05 Function Value -3180.228 
+NPL updating:  1.02217e-05 Function Value -3180.227 
+NPL updating:  8.993779e-06 Function Value -3180.228 
+NPL updating:  1.660548e-06 Function Value -3180.228 
+NPL updating:  1.844594e-06 Function Value -3180.228 
+NPL updating:  2.909666e-07 Function Value -3180.228 
+NPL updating:  7.982087e-08 Function Value -3180.228 
+PL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.23 0.10 -21.35      1
+bara2: senderdemocracy    1  0.00 0.08   0.01      0
+PL log Likelihood: -3208.74 
+NPL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.23 0.16  -14.0      1
+bara2: senderdemocracy    1  0.03 0.10    0.3      0
+NPL log Likelihood: -3180.23 
+CMLE:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.32 0.11 -20.70      1
+bara2: senderdemocracy    1  0.01 0.04   0.21      0
+CMLE log Likelihood: -3177.05 
+PL:
+                     Estimate Std. Error z value Pr(>|z|)
+bara:(Intercept)        -2.86       0.11  -27.14     0.00
+bara:senderdemocracy     0.01       0.02    0.27     0.79
+PL log Likelihood: -4582.5 
+NPL:
+                     Estimate Std. Error z value Pr(>|z|)
+bara:(Intercept)        -2.89       0.11  -27.33     0.00
+bara:senderdemocracy     0.02       0.04    0.65     0.52
+NPL log Likelihood: -4425.01 
+NPL updating:  1.065646 Function Value -3624.083 
+NPL updating:  0.8793532 Function Value -3609.898 
+NPL updating:  0.1705386 Function Value -3608.866 
+NPL updating:  0.0409551 Function Value -3609.053 
+NPL updating:  0.01451342 Function Value -3608.933 
+NPL updating:  0.00910328 Function Value -3608.936 
+NPL updating:  0.001517038 Function Value -3608.924 
+NPL updating:  0.001421544 Function Value -3608.928 
+NPL updating:  0.0002020788 Function Value -3608.926 
+NPL updating:  0.0002263716 Function Value -3608.927 
+NPL updating:  2.949138e-05 Function Value -3608.926 
+NPL updating:  3.374987e-05 Function Value -3608.926 
+NPL updating:  4.485118e-06 Function Value -3608.926 
+NPL updating:  5.035544e-06 Function Value -3608.926 
+NPL updating:  2.842913e-07 Function Value -3608.926 
+NPL updating:  2.372511e-07 Function Value -3608.926 
+NPL updating:  1.863973e-07 Function Value -3608.926 
+NPL updating:  9.332192e-08 Function Value -3608.926 
+[1] -3608.926

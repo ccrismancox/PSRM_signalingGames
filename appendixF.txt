@@ -1,0 +1,30 @@
+traditional ML--Newton Solver:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -0.56 0.77  -0.73      0
+bara2: senderdemocracy   -1  0.00 0.01  -0.12      0
+tML log Likelihood: -4102.76 
+diagonal element is zero 
+[1] 365
+diagonal element is zero 
+[1] 416
+diagonal element is zero 
+[1] 416
+diagonal element is zero 
+[1] 286
+diagonal element is zero 
+[1] 74
+diagonal element is zero 
+[1] 15
+diagonal element is zero 
+[1] 9
+There were 17 warnings (use warnings() to see them)
+traditional ML-- Select largest EQ:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -0.76 0.14  -5.46      1
+bara2: senderdemocracy    1  0.06 0.01   7.84      1
+tML log Likelihood: -4302.08 
+traditional ML--PL start values:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.62 0.11 -22.90      1
+bara2: senderdemocracy   -1 -0.03 0.04  -0.81      0
+tML log Likelihood: -3938.73 

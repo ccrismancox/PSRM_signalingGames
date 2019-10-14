@@ -1,0 +1,7 @@
+Warning messages:
+1: Removed 18 rows containing non-finite values (stat_bin). 
+2: Removed 40 rows containing non-finite values (stat_bin). 
+3: Removed 41 rows containing non-finite values (stat_bin). 
+4: Removed 29 rows containing non-finite values (stat_bin). 
+null device 
+          1 
