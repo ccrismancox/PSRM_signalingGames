@@ -1,3 +1,0 @@
-Warning message:
-Removed 54 rows containing missing values (geom_point). 
-
