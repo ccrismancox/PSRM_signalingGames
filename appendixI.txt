@@ -61,4 +61,158 @@ NPL updating:  2.842913e-07 Function Value -3608.926
 NPL updating:  2.372511e-07 Function Value -3608.926 
 NPL updating:  1.863973e-07 Function Value -3608.926 
 NPL updating:  9.332192e-08 Function Value -3608.926 
-[1] -3608.926
+There were 13 warnings (use warnings() to see them)
+PL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.43 0.15 -16.36      1
+bara2: senderdemocracy   -1 -0.02 0.10  -0.16      0
+PL log Likelihood: -3624.09 
+NPL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.44 0.17 -14.54      1
+bara2: senderdemocracy   -1 -0.01 0.08  -0.10      0
+NPL log Likelihood: -3608.93 
+Warning message:
+In sqrt(diag(invBorderHessian)[1:20]) : NaNs produced
+CMLE:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -2.48 0.13 -19.43      1
+bara2: senderdemocracy   -1 -0.04 0.08  -0.59      0
+CMLE log Likelihood: -3606.4 
+Warning message:
+In randomForest.default(m, y, ...) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+Warning message:
+In randomForest.default(m, y, ...) :
+  The response has five or fewer unique values.  Are you sure you want to do regression?
+NPL updating:  0.8031504 Function Value -2717.707 
+NPL updating:  0.3831856 Function Value -2717.174 
+NPL updating:  0.03722773 Function Value -2717.258 
+NPL updating:  0.006716777 Function Value -2717.302 
+NPL updating:  0.001495397 Function Value -2717.308 
+NPL updating:  0.0002715494 Function Value -2717.309 
+NPL updating:  7.536198e-05 Function Value -2717.31 
+NPL updating:  1.339096e-05 Function Value -2717.31 
+NPL updating:  3.380068e-06 Function Value -2717.31 
+NPL updating:  3.771379e-07 Function Value -2717.31 
+NPL updating:  5.87557e-07 Function Value -2717.31 
+NPL updating:  1.035068e-07 Function Value -2717.31 
+NPL updating:  3.298244e-08 Function Value -2717.31 
+PL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -1.89 0.41  -4.62      1
+bara2: senderdemocracy   -1 -0.02 0.31  -0.08      0
+PL log Likelihood: -2712.68 
+NPL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -1.90 0.39  -4.82      1
+bara2: senderdemocracy   -1 -0.03 0.22  -0.12      0
+NPL log Likelihood: -2717.31 
+CMLE:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -1.88 0.10 -19.61      1
+bara2: senderdemocracy   -1 -0.02 0.06  -0.36      0
+CMLE log Likelihood: -2715.36 
+NPL updating:  0.6683479 Function Value -2576.608 
+NPL updating:  11.80518 Function Value -2221.581 
+NPL updating:  2.778129 Function Value -2323.781 
+NPL updating:  4.570863 Function Value -2386.91 
+NPL updating:  4.296612 Function Value -2412.995 
+NPL updating:  0.4999068 Function Value -2389.715 
+NPL updating:  1.145724 Function Value -2397.737 
+NPL updating:  0.3609975 Function Value -2400.136 
+NPL updating:  0.4177631 Function Value -2396.068 
+NPL updating:  0.1341639 Function Value -2388.451 
+NPL updating:  0.4400772 Function Value -2397.193 
+NPL updating:  0.1739929 Function Value -2392.612 
+NPL updating:  0.2311972 Function Value -2392.242 
+NPL updating:  0.07753765 Function Value -2386.704 
+NPL updating:  0.206391 Function Value -2391.345 
+NPL updating:  0.08944363 Function Value -2388.93 
+NPL updating:  0.1194882 Function Value -2388.978 
+NPL updating:  0.04049144 Function Value -2386.213 
+NPL updating:  0.09711427 Function Value -2388.667 
+NPL updating:  0.04594498 Function Value -2387.751 
+NPL updating:  0.0569777 Function Value -2387.744 
+NPL updating:  0.01857365 Function Value -2386.581 
+NPL updating:  0.04578225 Function Value -2387.819 
+NPL updating:  0.02017433 Function Value -2387.572 
+NPL updating:  0.02674084 Function Value -2387.517 
+NPL updating:  0.00890859 Function Value -2387.054 
+NPL updating:  0.02105086 Function Value -2387.681 
+NPL updating:  0.007808997 Function Value -2387.653 
+NPL updating:  0.01312424 Function Value -2387.604 
+NPL updating:  0.006673565 Function Value -2387.428 
+NPL updating:  0.009452128 Function Value -2387.748 
+NPL updating:  0.005784365 Function Value -2387.784 
+NPL updating:  0.006403451 Function Value -2387.75 
+NPL updating:  0.003962715 Function Value -2387.694 
+NPL updating:  0.004142637 Function Value -2387.857 
+NPL updating:  0.003468246 Function Value -2387.903 
+NPL updating:  0.003111131 Function Value -2387.88 
+NPL updating:  0.002149533 Function Value -2387.869 
+NPL updating:  0.001772783 Function Value -2387.951 
+NPL updating:  0.001741142 Function Value -2387.987 
+NPL updating:  0.001505089 Function Value -2387.973 
+NPL updating:  0.0009962177 Function Value -2387.974 
+NPL updating:  0.000744125 Function Value -2388.015 
+NPL updating:  0.0007844039 Function Value -2388.038 
+NPL updating:  0.0007243596 Function Value -2388.029 
+NPL updating:  0.0004860464 Function Value -2388.033 
+NPL updating:  0.0003090923 Function Value -2388.053 
+NPL updating:  0.0003294379 Function Value -2388.066 
+NPL updating:  0.0003473058 Function Value -2388.061 
+NPL updating:  0.0002652899 Function Value -2388.063 
+NPL updating:  0.0001460942 Function Value -2388.073 
+NPL updating:  0.0001311706 Function Value -2388.08 
+NPL updating:  0.0001661632 Function Value -2388.077 
+NPL updating:  0.0001363332 Function Value -2388.078 
+NPL updating:  7.847712e-05 Function Value -2388.083 
+NPL updating:  4.974098e-05 Function Value -2388.087 
+NPL updating:  7.950357e-05 Function Value -2388.085 
+NPL updating:  6.718617e-05 Function Value -2388.085 
+NPL updating:  4.16876e-05 Function Value -2388.088 
+NPL updating:  2.005442e-05 Function Value -2388.09 
+NPL updating:  3.813098e-05 Function Value -2388.088 
+NPL updating:  3.214568e-05 Function Value -2388.089 
+NPL updating:  2.196459e-05 Function Value -2388.09 
+NPL updating:  9.987012e-06 Function Value -2388.091 
+NPL updating:  1.837109e-05 Function Value -2388.09 
+NPL updating:  1.506465e-05 Function Value -2388.09 
+NPL updating:  1.150502e-05 Function Value -2388.091 
+NPL updating:  5.339544e-06 Function Value -2388.091 
+NPL updating:  8.90675e-06 Function Value -2388.091 
+NPL updating:  6.961878e-06 Function Value -2388.091 
+NPL updating:  6.0015e-06 Function Value -2388.091 
+NPL updating:  2.804808e-06 Function Value -2388.091 
+NPL updating:  4.350938e-06 Function Value -2388.091 
+NPL updating:  3.190518e-06 Function Value -2388.091 
+NPL updating:  3.121897e-06 Function Value -2388.091 
+NPL updating:  1.45534e-06 Function Value -2388.092 
+NPL updating:  2.143117e-06 Function Value -2388.091 
+NPL updating:  1.457229e-06 Function Value -2388.091 
+NPL updating:  1.621056e-06 Function Value -2388.091 
+NPL updating:  7.488729e-07 Function Value -2388.092 
+NPL updating:  1.109386e-06 Function Value -2388.091 
+NPL updating:  1.972406e-07 Function Value -2388.091 
+NPL updating:  5.064015e-07 Function Value -2388.091 
+NPL updating:  3.405548e-07 Function Value -2388.092 
+NPL updating:  6.697318e-07 Function Value -2388.092 
+NPL updating:  4.451247e-07 Function Value -2388.092 
+NPL updating:  2.166543e-07 Function Value -2388.092 
+NPL updating:  2.293987e-07 Function Value -2388.092 
+NPL updating:  3.86768e-08 Function Value -2388.092 
+Error in maxNRCompute(fn = function (theta, fnOrig, gradOrig = NULL, hessOrig = NULL,  : 
+  NA in the initial gradient
+Error in maxNRCompute(fn = function (theta, fnOrig, gradOrig = NULL, hessOrig = NULL,  : 
+  NA in Hessian (at the iteration start)
+PL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -1.97 0.10 -19.46      1
+bara2: senderdemocracy    1  0.10 0.11   0.95      0
+PL log Likelihood: -2648.23 
+NPL:
+                       Sign  Est. S.E. z-stat p<0.05
+bara1: (Intercept)       -1 -1.78 0.34  -5.19      1
+bara2: senderdemocracy    1  0.09 0.33   0.26      0
+NPL log Likelihood: -2388.09 

@@ -203,7 +203,7 @@ Results <- foreach(b=1:B,
 
 }
 save(Results, 
-     file = "AppendixC4_results.RData")  
+     file = "appendixC4_results.RData")  
 
 stopCluster(workers)
 

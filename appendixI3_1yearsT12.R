@@ -125,7 +125,6 @@ while(eval > tol & iter < maxit){
 }
 out.NPL$time <- proc.time()[3] - ptm
 out.NPL$iter <- iter
-out.NPL$maximum
 
 
 

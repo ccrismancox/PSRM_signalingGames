@@ -17,6 +17,7 @@ suppressMessages(library(doRNG))
 source("signalingFunctions_main.r")
 source("gradientFunctions.r")
 load("SanctionsDataSet_1yearsT1.rdata")
+load("appendixI3_output_1yearsT1.Rdata")
 
 missing <- apply(is.na(Xall), 1, max)
 Y <- Yall[,missing==0]
@@ -43,6 +44,7 @@ for(i in 1:7){
   regr[[i]] <- model.matrix(f1, data=X, rhs=i)
 }
 names(regr) <- c("SA", "VA", "CB", "barWA", "barWB", "bara", "VB")  
+varnames <- paste(names(unlist(lapply(regr, colnames))), ": ", unlist(lapply(regr, colnames)), sep="")
 
 # compute PRhat for starting values
 index1 <- colSums(Y[2:4,]) >= 1
@@ -104,7 +106,7 @@ for(i in 1:B){
   grqll <- function(x){-eval_gr_qll(x, PRhat.boot, PFhat.boot,Y.boot,regr.boot)}
   
   #gradient methods
-  x0 <- out$est
+  x0 <- PL.out$model$est
   out.pl.boot <- try(maxLik::maxLik(start=x0, fqll,
                                     gr=grqll,
                                     method='NR',
@@ -161,9 +163,7 @@ for(i in 1:B){
 save(list=c("NPL.boot", "PL.boot"), file="appendixI3_bootstraps_1yearsT1.rdata")
 load("appendixI3_bootstraps_1yearsT1.rdata")
 ######################### PICK IT UP HERE ###############################################
-varnames <- paste(names(unlist(lapply(regr, colnames))), ": ", unlist(lapply(regr, colnames)), sep="")
 
-load("appendixI3_output_1yearsT1.Rdata")
 ####PL####
 out <- PL.out$model
 vcov.PL <- var(PL.boot, na.rm=TRUE)
@@ -174,8 +174,8 @@ p <- 2*pnorm(abs(z),lower.tail = F)<0.1
 names(PL.hat) <- varnames
 out.PL <- round(cbind(sign(PL.hat), PL.hat, se.PL, z, p),2)
 colnames(out.PL) <- c("Sign", "Est.", "S.E.", "z-stat", "p<0.05")
-cat("PL:\n") #The PL column ofTable 8
-print(out.PL[19:20,])
+cat("PL:\n") #The PL column of Table 10
+print(out.PL[18:19,])
 cat(paste("PL log Likelihood:", round(out$max,2), "\n"))
 
 ####NPL####
@@ -190,7 +190,7 @@ names(NPL.hat) <- varnames
 out.npl <- round(cbind(sign(NPL.hat), NPL.hat, se.NPL, z, p),2)
 colnames(out.npl) <- c("Sign", "Est.", "S.E.", "z-stat", "p<0.05")
 cat("NPL:\n") # NPL column ofTable 8
-print(out.npl[19:20,])
+print(out.npl[18:19,])
 cat(paste("NPL log Likelihood:", round(out.NPL$max,2), "\n"))
 
 

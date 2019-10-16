@@ -45,6 +45,7 @@ for(i in 1:7){
   regr[[i]] <- model.matrix(f1, data=X, rhs=i)
 }
 names(regr) <- c("SA", "VA", "CB", "barWA", "barWB", "bara", "VB")
+varnames <- paste(names(unlist(lapply(regr, colnames))), ": ", unlist(lapply(regr, colnames)), sep="")
 
 # compute PRhat for starting values
 index1 <- colSums(Y[2:4,]) >= 1
@@ -93,8 +94,8 @@ for(i in 1:50){
 }
 
 SIGMA <- cov(Phat.boot)
-save(list="SIGMA", file="SIGMA__1yearsT12.rdata")
-load("SIGMA__1yearsT12.rdata")
+save(list="SIGMA", file="SIGMA_1yearsT12.rdata")
+load("SIGMA_1yearsT12.rdata")
 
 
 ####PL####

@@ -1,6 +1,6 @@
 # Replication instructions for "Estimating Crisis Signaling Games in International Relations: Problems and Solutions"
 # Casey Crisman-Cox and Michael Gibilisco
-# August 10, 2019
+# October 15, 2019
 
 ## A note for replicators
 Conducting constrained maximum likelihood estimation (CMLE)  requires specialized (open source) software that we run using a Ubuntu Linux operating system.
@@ -64,15 +64,14 @@ All the values reported in Table 3 are found in `estimationLog.txt`, and  Figure
 Individual aspects of the analysis can be reproduced separately by running the commands in `replicateSanctions.sh` one at a time.
 
 
-
 ## Appendices
 To replicate the appendices run the commands:
 ```bash
-bash replicationAppendixC.sh
-bash replicationAppendixE.sh
-bash replicationAppendixF.sh
-bash replicationAppendixG.sh
-bash replicationAppendixH.sh
-bash replicationAppendixI.sh
+bash replicateAppendixC.sh
+bash replicateAppendixE.sh
+bash replicateAppendixF.sh
+bash replicateAppendixG.sh
+bash replicateAppendixH.sh
+bash replicateAppendixI.sh
 ```
-These will produce Figures 8-24 and Tables 5-10. Table 5 is found in `appendixC.txt`, while Tables 6-10 are  in `appendixI.txt`.
+These will produce Figures 8-24 and Tables 5-10. Table 5 is found in `appendixC.txt`, while Tables 6-10 are  in `appendixI.txt`. Additionally, various `rdata` files will be produced along the way.

@@ -24,7 +24,7 @@ Contents (main text):
 - Installation files
     - `CMLE_setup.sh`:  A bash script to be run once WSL is installed and setup.  This will install all the necessary outside software to replicate the results. (Internet connection is required)
     - `install_Rpackages_noadmin.r`: An R script that installs all the `R` packages used here.
-	- `sigInt_0.0.0.9000.tar.gz`: R package used in Appendix I.7
+	- `sigInt_0.0.0.9000.tar.gz`: R package used in Appendix I.2
 - Support functions
     - `signalingFunctions_main.r`: Contains objective functions and helper functions for the PL, NPL, and tML methods
 	- `gradientFunctions.r`: Contains gradient functions for the PL and NPL
@@ -52,13 +52,15 @@ Contents (main text):
 	- `CMLE_estimation.py`: Fits the CMLE to the sanctions data. Outputs `CMLE_estimation_output.rdata`
     - `estimation.R`: Fits tML, PL, and NPL to sanctions data. Outputs `estimation_output.Rdata`
 	- `standardErrors.R`: Estimates standard errors for the tML, PL, NPL, and CMLE and prints the results reported in Table 3
-	- `ComparativeStatics.R`: Inputs `CMLE_estimation_output.rdata` and `estimation_output.Rdata` and produces Figure 6 (`figure6.pdf`)
+	- `comparativeStatics.R`: Inputs `CMLE_estimation_output.rdata` and `estimation_output.Rdata` and produces Figure 6 (`figure6.pdf`)
 - Output files
   	- `figure2.pdf`: Figure 2 in the manuscript
 	- `MonteCarloResults_MEQ.rdata`: Raw Monte Carlo results for the PL, NPL, and tML when there are multiple equilibria in the data generating game
 	- `MonteCarloResults_unique.rdata`:	Raw Monte Carlo results for the PL, NPL, and tML when there is a unique equilibrium in the data generating game
 	- `CMLE_unique.rdata`: Raw Monte Carlo results for the CMLE when there are multiple equilibria in the data generating game
 	- `CMLE_meq.rdata`:	Raw Monte Carlo results for the CMLE when there is a unique equilibrium in the data generating game
+	- `baseLinePlotDataMEQ.rdata`: Processed Monte Carlo results for the PL and NPL when there are multiple equilibria; used in Appendix E.
+	- `baseLinePlotDataUnique.rdata`: Processed Monte Carlo results for the PL and NPL when there is a unique equilibrium; used in Appendix E.
 	- `figure3.pdf`: Figure 3 in the manuscript
 	- `figure4.pdf`: Figure 4 in the manuscript
 	- `CMLE_estimation_output.rdata`: CMLE point estimates and model information
@@ -99,7 +101,7 @@ Contents (appendix):
 	    - `figure17.pdf`: Figure 17 in the Appendix
 	    - `MonteCarloUnstable.rdata`: Raw Monte Carlo results for the PL, NPL, and tML relating to best response stability
 	    - `CMLE_unstable.rdata`: Raw Monte Carlo results for the CMLE relating to best response stability
-	    - `AppendixC4_results.RData`: Raw Monte Carlo results for the PL, NPL, and tML when the data are generated from the economic sanctions example
+	    - `appendixC4_results.RData`: Raw Monte Carlo results for the PL, NPL, and tML when the data are generated from the economic sanctions example
   	    - `CMLE_sanctionsMC.rdata`: Raw Monte Carlo results for the CMLE when the data are generated from the economic sanctions example
 		- `appendixC.txt`: Log file for Appendix C.  Prints all the information contained in Table 4.
 - Appendix E
@@ -135,7 +137,8 @@ Contents (appendix):
 - Appendix H
     - Analysis
 	    - `replicateAppendixH.sh`: Runs `appendixH.R` and outputs Figure 24 and log file `appendixH.txt`.
-		- `appendixG.R`: Outputs Figure 24 (`figure24.pdf`)
+		- `SanctionsDataSet1year.rdata`: Sanctions data used in Appendix H.
+		- `appendixH.R`: Outputs Figure 24 (`figure24.pdf`)
 	- Output files
 	    - `figure24.pdf`: Figure 24 in the Appendix
 		- `appendixH.txt`: Log file for Appendix H
@@ -159,7 +162,7 @@ Contents (appendix):
 		- `SanctionsDataSet_1yearsT12.rdata`: Economic sanctions data with  dyad-year aggregation.
 		- `appendixI3_1yearsT12.R`: Fits the model to the dyad-year  sanctions data using the  PL and NPL estimators. Outputs `appendixI3_output_1yearsT12.Rdata`.
 		- `CMLE_sanctions_1yearsT12.py`:  Fits the model to the dyad-year sanctions data using the CMLE. Outputs `appendixI3_CMLEoutput_1yearsT12.Rdata`.
-		- `appendixI3_1yearsT12_SE.`: Estimates the standard errors for the PL, NPL, and CMLE estimates for the model fit to dyad-year  data. Prints out the results in Table 9.
+		- `appendixI3_1yearsT12_SE.R`: Estimates the standard errors for the PL, NPL, and CMLE estimates for the model fit to dyad-year  data. Prints out the results in Table 9.
 		- `SanctionsDataSet_1yearsT1.rdata`:  Economic sanctions data with actions recorded at the dyad-year and dyad-year aggregation.
 		- `appendixI3_1yearsT1.R`: Fits the model to data in `SanctionsDataSet_1yearsT1.rdata`  using the  PL and NPL estimators. Outputs `appendixI3_output_1yearsT1.Rdata`.
 		- `appendixI3_1yearsT1_SE.R`: Bootstraps the PL and NPL from ``appendixI3_1yearsT1.R`. Prints out the results in Table 10.
@@ -169,10 +172,10 @@ Contents (appendix):
 		- `SIGMA_quarters.rdata`:  First stage covariance matrix for the PL estimates with quarterly data.
 		- `appendixI3_output_5years.Rdata`: PL and NPL estimates for dyad-5 year data.
 		- `appendixI3_CMLEoutput_5years.Rdata`: CMLE estimates for dyad-5 year data.
-		- `SIGMA_5year.rdata`:  First stage covariance matrix for the PL estimates with dyad-5 year data. 	
+		- `SIGMA_5year.rdata`:  First stage covariance matrix for the PL estimates with dyad-5 year data.
 		- `appendixI3_output_1yearsT12.Rdata`: PL and NPL estimates for dyad-year data.
 		- `appendixI3_CMLEoutput_5years.Rdata`: CMLE estimates for dyad-year data.
-		- `SIGMA_1yearsT12.rdata`:  First stage covariance matrix for the PL estimates with dyad-year data. 			
+		- `SIGMA_1yearsT12.rdata`:  First stage covariance matrix for the PL estimates with dyad-year data.
 		- `appendixI3_output_1yearsT1.Rdata`: PL and NPL estimates for the dyad-year aggregation with yearly actions.
 		- `appendixI3_bootstraps_1yearsT1.rdata`:  Raw bootstraps produced by `appendixI3_1yearsT1_SE.R`.
 		- `appendixI.txt`: Log file for Appendix I.  Contains all the information presented in Tables 6-10.
@@ -231,11 +234,11 @@ Individual aspects of the analysis can be reproduced separately by running the c
 ## Appendices
 To replicate the appendices run the commands:
 ```bash
-bash replicationAppendixC.sh
-bash replicationAppendixE.sh
-bash replicationAppendixF.sh
-bash replicationAppendixG.sh
-bash replicationAppendixH.sh
-bash replicationAppendixI.sh
+bash replicateAppendixC.sh
+bash replicateAppendixE.sh
+bash replicateAppendixF.sh
+bash replicateAppendixG.sh
+bash replicateAppendixH.sh
+bash replicateAppendixI.sh
 ```
-These will produce Figures 8-24 and Tables 5-10. Table 5 is found in `appendixC.txt`, while Tables 6-10 are  in `appendixI.txt`.
+These will produce Figures 8-24 and Tables 5-10. Table 5 is found in `appendixC.txt`, while Tables 6-10 are  in `appendixI.txt`. Additionally, various `rdata` files will be produced along the way.
