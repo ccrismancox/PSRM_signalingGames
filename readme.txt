@@ -133,7 +133,7 @@ Contents (appendix):
 	    - `figure21.pdf`: Figure 21 in the Appendix
 	    - `figure22.pdf`: Figure 22 in the Appendix
 	    - `figure23.pdf`: Figure 23 in the Appendix
-		- `appendixG.txt`: Log file for Appendix G (empty).
+		- `appendixG.txt`: Log file for Appendix G.
 - Appendix H
     - Analysis
 	    - `replicateAppendixH.sh`: Runs `appendixH.R` and outputs Figure 24 and log file `appendixH.txt`.
