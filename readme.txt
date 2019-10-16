@@ -87,7 +87,7 @@ Contents (appendix):
 		- `appendixC3.R`: Inputs `MonteCarloUnstable.rdata` and `CMLE_unstable.rdata` and outputs Figures 16-17 (`figure16.pdf` and `figure17.pdf`).
 		- `appendixC4_simulation.R`: Runs the Monte Carlo simulation that is based on the economic sanctions data. Outputs `appendixC4_results.RData`
 		- `CMLE_sanctionsMC.py`: Runs the Monte Carlo simulation for the CMLE that is based on the economic sanctions data. Outputs `CMLE_sanctionsMC.rdata`.
-			- `appendixC4.R`: Inputs `appendixC4_results.RData`, `CMLE_sanctionsMC.rdata`, and `CMLE_estimation_output.rdata` and prints the results in Table 4.
+		- `appendixC4.R`: Inputs `appendixC4_results.RData`, `CMLE_sanctionsMC.rdata`, and `CMLE_estimation_output.rdata` and prints the results in Table 4.
 	- Output files
         - `figure8.pdf`: Figure 8 in the Appendix
 	    - `figure9.pdf`: Figure 9 in the Appendix
@@ -137,7 +137,7 @@ Contents (appendix):
 - Appendix H
     - Analysis
 	    - `replicateAppendixH.sh`: Runs `appendixH.R` and outputs Figure 24 and log file `appendixH.txt`.
-		- `SanctionsDataSet1year.rdata`: Sanctions data used in Appendix H.
+		- `SanctionsDataSet_1yearsT12.rdata`: Economic sanctions data with  dyad-year aggregation.
 		- `appendixH.R`: Outputs Figure 24 (`figure24.pdf`)
 	- Output files
 	    - `figure24.pdf`: Figure 24 in the Appendix
@@ -159,7 +159,6 @@ Contents (appendix):
 		- `appendixI3_5years.R`: Fits the model to the dyad-5 year sanctions data using the  PL and NPL estimators. Outputs `appendixI3_output_5years.Rdata`.
 		- `CMLE_sanctions_5years.py`: Fits the model to the dyad-5 year sanctions data using the CMLE estimator. Outputs `appendixI3_CMLEoutput_5years.Rdata`.
 		- `appendixI3_5yearsSE.R`: Estimates the standard errors for the PL, NPL, and CMLE estimates for the model fit to dyad-5 year  data. Prints out the results in Table 8.
-		- `SanctionsDataSet_1yearsT12.rdata`: Economic sanctions data with  dyad-year aggregation.
 		- `appendixI3_1yearsT12.R`: Fits the model to the dyad-year  sanctions data using the  PL and NPL estimators. Outputs `appendixI3_output_1yearsT12.Rdata`.
 		- `CMLE_sanctions_1yearsT12.py`:  Fits the model to the dyad-year sanctions data using the CMLE. Outputs `appendixI3_CMLEoutput_1yearsT12.Rdata`.
 		- `appendixI3_1yearsT12_SE.R`: Estimates the standard errors for the PL, NPL, and CMLE estimates for the model fit to dyad-year  data. Prints out the results in Table 9.
@@ -174,7 +173,7 @@ Contents (appendix):
 		- `appendixI3_CMLEoutput_5years.Rdata`: CMLE estimates for dyad-5 year data.
 		- `SIGMA_5year.rdata`:  First stage covariance matrix for the PL estimates with dyad-5 year data.
 		- `appendixI3_output_1yearsT12.Rdata`: PL and NPL estimates for dyad-year data.
-		- `appendixI3_CMLEoutput_5years.Rdata`: CMLE estimates for dyad-year data.
+		- `appendixI3_CMLEoutput_1yearsT12.Rdata`: CMLE estimates for dyad-year data.
 		- `SIGMA_1yearsT12.rdata`:  First stage covariance matrix for the PL estimates with dyad-year data.
 		- `appendixI3_output_1yearsT1.Rdata`: PL and NPL estimates for the dyad-year aggregation with yearly actions.
 		- `appendixI3_bootstraps_1yearsT1.rdata`:  Raw bootstraps produced by `appendixI3_1yearsT1_SE.R`.

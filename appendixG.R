@@ -122,37 +122,34 @@ pF <- h.jo(cStar.jo(pR,U.cmle),U.cmle)/pC
 psanction <- pC*pR*pF
 
                      
-
-figure21 <- ggplot(ggdata, aes(x=x,y=pf)) + geom_point(color="navyblue",size=3.5) + 
+pdf("figure21.pdf", height=6, width=10)
+ggplot(ggdata, aes(x=x,y=pf)) + geom_point(color="navyblue",size=3.5) + 
   scale_x_continuous(breaks=seq(from=0,to=nstep,length.out=7), 
                      labels = round(seq(from=-6,to=0,by=1), digits=1)) +
   theme_bw(18) + 
   geom_point(aes(x=vldata$vl-1, y=pF[93]),color= "orangered1", shape=18, size=5) + 
   xlab( bquote(.(paste(info$sender, "Audience Costs,")) ~ bar(italic(a)))) +   
   ylab(expression(paste("Prob. of Fighting, ", italic(p[F]))))
+dev.off()
 
-
-
-figure22 <- ggplot(ggdata, aes(x=x,y=pr)) + geom_point(color="navyblue",size=3.5) + 
+pdf("figure22.pdf", height=6, width=10)
+ggplot(ggdata, aes(x=x,y=pr)) + geom_point(color="navyblue",size=3.5) + 
   scale_x_continuous(breaks=seq(from=0,to=nstep,length.out=7), 
                      labels = round(seq(from=-6,to=0,by=1), digits=1)) +
   theme_bw(18) + 
   geom_point(aes(x=vldata$vl-1, y=pR[93]),color= "orangered1", shape=18, size=5) + 
   xlab( bquote(.(paste(info$sender, "Audience Costs,")) ~ bar(italic(a)))) +   
   ylab(expression(paste("Equilibria, ", italic(p[R]))))
+dev.off()
 
 
-
-figure23 <- ggplot(ggdata, aes(x=x,y=psanction)) + geom_point(color="navyblue",size=3.5) + 
+pdf("figure23.pdf", height=6, width=10)
+ggplot(ggdata, aes(x=x,y=psanction)) + geom_point(color="navyblue",size=3.5) + 
   scale_x_continuous(breaks=seq(from=0,to=nstep,length.out=7), 
                      labels = round(seq(from=-6,to=0,by=1), digits=1)) +
   theme_bw(18) + 
   geom_point(aes(x=vldata$vl-1, y=psanction[93]+.004),color= "orangered1", shape=18, size=5) + #small manual jitter
   xlab( bquote(.(paste(info$sender, "Audience Costs,")) ~ bar(italic(a)))) +   
   ylab("Probability of\nObserving Sanctions")
-
-ggsave(figure21, file="figure21.pdf", height=6, width=10)
-ggsave(figure22, file="figure22.pdf", height=6, width=10)
-ggsave(figure23, file="figure23.pdf", height=6, width=10)
-
+dev.off()
 

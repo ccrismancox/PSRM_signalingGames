@@ -11,7 +11,7 @@ suppressMessages(library(ggplot2))
 suppressMessages(library(stringr))
 suppressMessages(library(gridExtra))
 
-load("SanctionsDataSet1year.rdata")
+load("SanctionsDataSet_1yearsT12.rdata")
 
 
 # remove irrelevant and missing dyads values
