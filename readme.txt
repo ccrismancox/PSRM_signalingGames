@@ -85,9 +85,9 @@ Contents (appendix):
     	- `appendixC3_simulation.r`: Runs the Monte Carlo simulation that explores best response stability. Outputs `MonteCarloUnstable.rdata`.
 	    - `MonteCarloCMLE_unstable.py`: Runs the Monte Carlo simulation for the CMLE that explores best response stability. Outputs `CMLE_unstable.rdata`.
 		- `appendixC3.R`: Inputs `MonteCarloUnstable.rdata` and `CMLE_unstable.rdata` and outputs Figures 16-17 (`figure16.pdf` and `figure17.pdf`).
-		- `appendixC4_simulation.R`: Runs the Monte Carlo simulation that is based on the economic sanctions data. Outputs `AppendixC4_results.RData`
+		- `appendixC4_simulation.R`: Runs the Monte Carlo simulation that is based on the economic sanctions data. Outputs `appendixC4_results.RData`
 		- `CMLE_sanctionsMC.py`: Runs the Monte Carlo simulation for the CMLE that is based on the economic sanctions data. Outputs `CMLE_sanctionsMC.rdata`.
-		- `appendixC4.R`: Inputs `AppendixC4_results.RData`, `CMLE_sanctionsMC.rdata`, and `CMLE_estimation_output.rdata` and prints the results in Table 4.
+			- `appendixC4.R`: Inputs `appendixC4_results.RData`, `CMLE_sanctionsMC.rdata`, and `CMLE_estimation_output.rdata` and prints the results in Table 4.
 	- Output files
         - `figure8.pdf`: Figure 8 in the Appendix
 	    - `figure9.pdf`: Figure 9 in the Appendix

@@ -28,7 +28,7 @@ rmse <- function(bias, var){
   return(sqrt(sum(var)+ crossprod(bias)))
 }
 
-load("AppendixC4_results.RData")
+load("appendixC4_results.RData")
 
 len <- 1
 K <- ncol(Results)
@@ -123,7 +123,7 @@ row.names(relative) <- c("$S_A$: Econ. Dep$_A$", "$S_A$:  Dem$_A$","$S_A$: Conti
                          "$\\bar{a}$: Const.", "$\\bar{a}$: Dem$_A$", "Multivariate RMSE")
 
 cat("Table 4:\n")
-print(relative)
+print(round(relative,2))
 
 
 
