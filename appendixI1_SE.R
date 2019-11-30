@@ -136,7 +136,7 @@ JpPsi <- dPsiDp(Phat$PRhat, Phat$PFhat, out.NPL$est, Y, regr)
 JtPsi <- dPsi.dTheta(out.NPL$estimate,Phat$PRhat, Phat$PFhat, Y, regr)
 
 topSlice <- solve(Dtheta.theta  + Dtheta.p %*% solve(diag(nrow(JpPsi)) - t(JpPsi)) %*% JtPsi)
-bottomSlice <- solve(Dtheta.theta  + t(JtPsi) %*% solve(diag(nrow(JpPsi)) - t(JpPsi)) %*% t(Dtheta.p))
+bottomSlice <- solve(Dtheta.theta  + t(JtPsi) %*% solve(diag(nrow(JpPsi)) - (JpPsi)) %*% t(Dtheta.p)) #fixed 11/11/2019
 vcov.NPL <- topSlice %*% Dtheta.theta %*% bottomSlice
 se.NPL <- sqrt(diag(vcov.NPL))
 
